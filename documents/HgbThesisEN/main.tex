@@ -10,7 +10,7 @@
 \RequirePackage[utf8]{inputenc} % Remove when using lualatex or xelatex!
 \RequirePackage{hgbpdfa}        % Creates a PDF/A-2b compliant document
 
-\documentclass[master,english,smartquotes]{hgbthesis}
+\documentclass[bachelor,english,smartquotes]{hgbthesis}
 % Valid options in [..]: 
 %    Type of work: 'diploma', 'master' (default), 'bachelor', 'internship' 
 %		 Additionally for a thesis exposé: 'proposal (for 'bachelor' and 'master')
@@ -31,17 +31,17 @@
 % Title page entries
 %%%-----------------------------------------------------------------------------
 
-\title{Partial Solutions to Universal Problems}
-\author{Alex A.\ Wiseguy}
-\programname{Universal Computing}
+\title{Location-Based Alerts for Passengers \\ in Public Transport}
+\author{Antonia\ Stieger}
+\programname{Mobile Computing}
 
-%\programtype{Fachhochschul-Bachelorstudiengang} % select/edit
-\programtype{Fachhochschul-Masterstudiengang}
+\programtype{Fachhochschul-Bachelorstudiengang} % select/edit
+%\programtype{Fachhochschul-Masterstudiengang}
 
 \placeofstudy{Hagenberg}
 \dateofsubmission{2024}{06}{25} % {YYYY}{MM}{DD}
 
-\advisor{Roger K.~Putnik, M.Sc.} % optional
+\advisor{Dr.-Ing. Jens~Kr\"osche} % optional
 
 %\strictlicense % restrictive license instead of Creative Commons (discouraged!)
 
@@ -52,7 +52,7 @@
 \maketitle
 \tableofcontents
 
-\include{front/preface} % A preface is optional
+% \include{front/preface} % A preface is optional
 \include{front/abstract}		
 \include{front/kurzfassung}			
 
@@ -61,22 +61,22 @@
 %%%-----------------------------------------------------------------------------
 
 \include{chapters/introduction}
-\include{chapters/thethesis}
-\include{chapters/latex}
-\include{chapters/figures}
-\include{chapters/mathematics}
-\include{chapters/literature}
-\include{chapters/printing}
-\include{chapters/closing}
+\include{chapters/relatedwork}
+\include{chapters/alertsolutions}
+\include{chapters/implementation}
+% \include{chapters/mathematics}
+% \include{chapters/literature}
+% \include{chapters/printing}
+\include{chapters/conclusion}
 
 %%%-----------------------------------------------------------------------------
 \appendix                                                             % Appendix 
 %%%-----------------------------------------------------------------------------
 
-\include{back/appendix_a} % Technical supplements
+% \include{back/appendix_a} % Technical supplements
 \include{back/appendix_b} % Contents of the CD-ROM/DVD
-\include{back/appendix_c} % Chronological list of changes
-\include{back/appendix_d} % Source text of this document
+% \include{back/appendix_c} % Chronological list of changes
+% \include{back/appendix_d} % Source text of this document
 
 %%%-----------------------------------------------------------------------------
 \backmatter                           % Back part (bibliography, glossary, etc.)
