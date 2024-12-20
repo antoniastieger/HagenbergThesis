@@ -1,0 +1,32 @@
+\chapter{Concept}
+\label{cha:Concept}
+
+\section{Overview}
+
+\section{Types of Alert Systems}
+\subsection{Time-Based Mode}
+% Scheduling Alerts Based on Specific Times
+
+\subsection{Station-Based Mode}
+% Monitoring Stations Using Geofences
+
+\subsection{Distance-Based Mode}
+% Nesting Geofence Regions Around the Destination
+
+% \section{Alerts on Smartphones}
+% For the implementation of a user-focused alert app in public transportation that ensures the passengers get reminded when to get off in an effective manner, notifications only aren't sufficient enough. So, this app will support vibrations and alarms as well as notifications. 
+
+% \subsection{Alert Types}
+% The primary users of the alert app are passengers in public transportation, where it is common for people to travel alongside others in shared spaces. In this setting, it's important to alert users effectively while avoiding disruption to other passengers. To address this need, the app incorporates a tiered system of three escalating alert types. These alert types range from minimally intrusive notifications to highly noticeable alarms, allowing users to select their preferred alert level.
+% This tiered approach ensures that users receive the necessary alerts without causing undue disruption, enhancing both user experience and public courtesy.
+
+% When a user approaches their designated stop, the app's first alert is always a notification, as it is the least intrusive option. This notification is mandatory and cannot be disabled by the user. However, certain device settings, such as silent mode, can reduce its effectiveness by muting audible cues. Additionally, by default push notifications aren't being displayed when an app is in the foreground state. Now users may wish to monitor their location on the map, which would prevent visual notifications unless the app is in the background. But this can be addressed programmatically, as discussed further in Chapter 5.
+% Therefore, notifications alone are sufficient only when users have their device in hand and are able to see or hear the alert.
+
+% Building on the limitations of notifications, the app's second alert is vibration, which users can select if preferred. Vibration provides a moderately more noticeable alert without disturbing other passengers, as it is silent. This option is particularly useful if the phone is in silent mode or if the user is distracted and it functions if the app's in both the foreground and background.
+% However, vibrations alone may still be insufficient in certain cases. For example, if the user is asleep, or if the phone is stored in a bag where the vibration may not be felt, the alert might go unnoticed. Additionally, since the vibration is not accompanied by a visual cue, users may forget they set a reminder or may mistake the vibration for a different type of alert.
+
+% Finally, for cases where the user may be asleep or highly distracted, the app provides an audible alarm designed to capture the user's full attention as a third alert option. Due to its intrusive nature, this alert may be disruptive to nearby passengers. The alarm can be silenced by pressing the volume controls or by using a designated button in the app's reminder overview, which becomes available while the alarm is active.
+
+% \subsection{Triggers}
+% In the app the user can choose the interval in which he/she wants to receive the notification, the triggers of the vibration and alarm cannot be altered by the user. But depending on the preferred trigger type, the user can choose over three modes which are different in the triggers that activate the alerts. There is a time-based mode which uses the scheduled arrival times of public transportation and calculates the trigger time according to the estimated stop arrival time. The user can choose between wanting to receive a notification 5, 7 or 10 minutes before arrival. The vibration will happen 3 minutes before and the alarm 2 minutes. As for the staion-based mode, it uses three geofences along the route to progressively alert the user. The notification can be scheduled for 3, 4 or 5 stations before, the vibration is 2 stations before and the alarm 1. The last mode is the distance mode which relies on nested geofences around the final destination to trigger alerts. The user can choose to receive the notification 500, 750 meters, 1, 1.5 or 2 kilometers before, the vibration is 350 meters before and the alarm 250 meters.
