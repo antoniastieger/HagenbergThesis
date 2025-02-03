@@ -1,0 +1,420 @@
+\glsdefs@newdocentry{coo}%
+{%
+name={\acronymfont {\glsentryshort {coo}}},%
+sort={CoO},%
+type={acronym},%
+first={CoO},%
+firstplural={CoOs},%
+text={CoO},%
+plural={CoOs},%
+description={Cell of Origin},%
+descriptionplural={Cell of Origin},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Cell of Origin},%
+longplural={Cell of Origins},%
+short={CoO},%
+shortplural={CoOs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{e911}%
+{%
+name={\acronymfont {\glsentryshort {e911}}},%
+sort={E-911},%
+type={acronym},%
+first={E-911},%
+firstplural={E-911s},%
+text={E-911},%
+plural={E-911s},%
+description={Enhanced 911},%
+descriptionplural={Enhanced 911},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Enhanced 911},%
+longplural={Enhanced 911s},%
+short={E-911},%
+shortplural={E-911s},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{eotd}%
+{%
+name={\acronymfont {\glsentryshort {eotd}}},%
+sort={E-OTD},%
+type={acronym},%
+first={E-OTD},%
+firstplural={E-OTDs},%
+text={E-OTD},%
+plural={E-OTDs},%
+description={Enhanced Observed Time Difference},%
+descriptionplural={Enhanced Observed Time Difference},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Enhanced Observed Time Difference},%
+longplural={Enhanced Observed Time Differences},%
+short={E-OTD},%
+shortplural={E-OTDs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{gps}%
+{%
+name={\acronymfont {\glsentryshort {gps}}},%
+sort={GPS},%
+type={acronym},%
+first={GPS},%
+firstplural={GPSs},%
+text={GPS},%
+plural={GPSs},%
+description={Global Positioning System},%
+descriptionplural={Global Positioning System},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Global Positioning System},%
+longplural={Global Positioning Systems},%
+short={GPS},%
+shortplural={GPSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{gnss}%
+{%
+name={\acronymfont {\glsentryshort {gnss}}},%
+sort={GNSS},%
+type={acronym},%
+first={GNSS},%
+firstplural={GNSSs},%
+text={GNSS},%
+plural={GNSSs},%
+description={Global Navigation Satellite System},%
+descriptionplural={Global Navigation Satellite System},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Global Navigation Satellite System},%
+longplural={Global Navigation Satellite Systems},%
+short={GNSS},%
+shortplural={GNSSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{imu}%
+{%
+name={\acronymfont {\glsentryshort {imu}}},%
+sort={IMU},%
+type={acronym},%
+first={IMU},%
+firstplural={IMUs},%
+text={IMU},%
+plural={IMUs},%
+description={Inertial Measurement Unit},%
+descriptionplural={Inertial Measurement Unit},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Inertial Measurement Unit},%
+longplural={Inertial Measurement Units},%
+short={IMU},%
+shortplural={IMUs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{lmu}%
+{%
+name={\acronymfont {\glsentryshort {lmu}}},%
+sort={LMU},%
+type={acronym},%
+first={LMU},%
+firstplural={LMUs},%
+text={LMU},%
+plural={LMUs},%
+description={Location Measurement Unit},%
+descriptionplural={Location Measurement Unit},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Location Measurement Unit},%
+longplural={Location Measurement Units},%
+short={LMU},%
+shortplural={LMUs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{lte}%
+{%
+name={\acronymfont {\glsentryshort {lte}}},%
+sort={LTE},%
+type={acronym},%
+first={LTE},%
+firstplural={LTEs},%
+text={LTE},%
+plural={LTEs},%
+description={Long Term Evolution},%
+descriptionplural={Long Term Evolution},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Long Term Evolution},%
+longplural={Long Term Evolutions},%
+short={LTE},%
+shortplural={LTEs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{psap}%
+{%
+name={\acronymfont {\glsentryshort {psap}}},%
+sort={PSAP},%
+type={acronym},%
+first={PSAP},%
+firstplural={PSAPs},%
+text={PSAP},%
+plural={PSAPs},%
+description={Public Safety Answering Point},%
+descriptionplural={Public Safety Answering Point},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Public Safety Answering Point},%
+longplural={Public Safety Answering Points},%
+short={PSAP},%
+shortplural={PSAPs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{rss}%
+{%
+name={\acronymfont {\glsentryshort {rss}}},%
+sort={RSS},%
+type={acronym},%
+first={RSS},%
+firstplural={RSSs},%
+text={RSS},%
+plural={RSSs},%
+description={Received Signal Strength},%
+descriptionplural={Received Signal Strength},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Received Signal Strength},%
+longplural={Received Signal Strengths},%
+short={RSS},%
+shortplural={RSSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{tdoa}%
+{%
+name={\acronymfont {\glsentryshort {tdoa}}},%
+sort={TDoA},%
+type={acronym},%
+first={TDoA},%
+firstplural={TDoAs},%
+text={TDoA},%
+plural={TDoAs},%
+description={Time Difference of Arrival},%
+descriptionplural={Time Difference of Arrival},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Time Difference of Arrival},%
+longplural={Time Difference of Arrivals},%
+short={TDoA},%
+shortplural={TDoAs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ttff}%
+{%
+name={\acronymfont {\glsentryshort {ttff}}},%
+sort={TTFF},%
+type={acronym},%
+first={TTFF},%
+firstplural={TTFFs},%
+text={TTFF},%
+plural={TTFFs},%
+description={Time to First Fix},%
+descriptionplural={Time to First Fix},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Time to First Fix},%
+longplural={Time to First Fixs},%
+short={TTFF},%
+shortplural={TTFFs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{umts}%
+{%
+name={\acronymfont {\glsentryshort {umts}}},%
+sort={UMTS},%
+type={acronym},%
+first={UMTS},%
+firstplural={UMTSs},%
+text={UMTS},%
+plural={UMTSs},%
+description={Universal Mobile Telecommunications System},%
+descriptionplural={Universal Mobile Telecommunications System},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Universal Mobile Telecommunications System},%
+longplural={Universal Mobile Telecommunications Systems},%
+short={UMTS},%
+shortplural={UMTSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{utdoa}%
+{%
+name={\acronymfont {\glsentryshort {utdoa}}},%
+sort={U-TDoA},%
+type={acronym},%
+first={U-TDoA},%
+firstplural={U-TDoAs},%
+text={U-TDoA},%
+plural={U-TDoAs},%
+description={Uplink Time Difference of Arrival},%
+descriptionplural={Uplink Time Difference of Arrival},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Uplink Time Difference of Arrival},%
+longplural={Uplink Time Difference of Arrivals},%
+short={U-TDoA},%
+shortplural={U-TDoAs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{wgs}%
+{%
+name={\acronymfont {\glsentryshort {wgs}}},%
+sort={WGS-84},%
+type={acronym},%
+first={WGS-84},%
+firstplural={WGS-84s},%
+text={WGS-84},%
+plural={WGS-84s},%
+description={World Geodetic System 1984},%
+descriptionplural={World Geodetic System 1984},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={World Geodetic System 1984},%
+longplural={World Geodetic System 1984s},%
+short={WGS-84},%
+shortplural={WGS-84s},%
+counter={page},%
+parent={},%
+%
+}%
+

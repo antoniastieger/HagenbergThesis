@@ -17,7 +17,13 @@
 %    Turn on smart quote handling: 'smartquotes'
 %    APA bibliography style: 'apa'
 %%%-----------------------------------------------------------------------------
+
+\usepackage[printonlyused]{acronym}
 \usepackage{hyperref}
+\usepackage{subfig}
+\usepackage{booktabs}
+\usepackage{rotating}
+\usepackage{array}
 
 \graphicspath{{images/}}  % Location of images and graphics
 \logofile{logo}           % Logo file: images/logo.pdf (no logo: \logofile{})
@@ -39,9 +45,9 @@
 %\programtype{Fachhochschul-Masterstudiengang}
 
 \placeofstudy{Hagenberg}
-\dateofsubmission{2025}{02}{15} % {YYYY}{MM}{DD}
+\dateofsubmission{2025}{03}{15} % {YYYY}{MM}{DD}
 
-\advisor{Dr.-Ing. Jens~Kr\"osche} % optional
+\advisor{FH-Prof. Dr.-Ing. Jens~Kr\"osche}
 
 %\strictlicense % restrictive license instead of Creative Commons (discouraged!)
 
@@ -62,8 +68,7 @@
 
 \include{chapters/introduction}
 \include{chapters/fundamentals2}
-\include{chapters/fundamentals}
-\include{chapters/relatedwork}
+% \include{chapters/relatedwork}
 \include{chapters/concept}
 \include{chapters/implementation}
 \include{chapters/conclusion}
@@ -72,7 +77,7 @@
 \appendix                                                             % Appendix 
 %%%-----------------------------------------------------------------------------
 
-% \include{back/appendix_a} % Technical supplements
+\include{back/appendix_a} % Acronyms
 % \include{back/appendix_b} % Contents of the CD-ROM/DVD
 % \include{back/appendix_c} % Chronological list of changes
 % \include{back/appendix_d} % Source text of this document
