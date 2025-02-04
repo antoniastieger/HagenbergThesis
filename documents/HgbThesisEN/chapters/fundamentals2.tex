@@ -199,15 +199,11 @@ The components of such an infrastructure are depicted in Figure~\ref{fig:infrast
 
 In most cases, base stations either assist terminals in performing measurements or perform the measurements themselves. 
 Additional components, such as databases and control units, may also be required for managing, processing and distributing positioning data. 
-This section provides an overview of positioning systems, including cellular, \acs{GNSS}, \ac{Wi-Fi} and Bluetooth positioning systems, as well as inertial navigation systems, all of which rely on the positioning methods described in Section~\ref{sec:methods}.
+This section provides an overview of positioning systems, including cellular, \acs{GNSS}, \ac{Wi-Fi} and Bluetooth positioning systems, as well as inertial navigation systems, all of which rely on the positioning methods described in Subsection~\ref{sec:methods}.
 
 % kolodziej2017local p. 106-107, 109-110
 % werner2014indoor p. 88-98
 % kupper2005location p. 91, 126-130, 155 (Satellite), 185 (Cellular), 233 (WLAN)
-
-% In the area of transport and mobility positioning systems with their satellites in the orbit, such as GPS, GLONASS and Galileo, play a major role: They provide positioning services in outdoor environments and offer a way to compute one’s physical location on the globe. Besides the localization, outdoor positioning systems are also used in real- time navigation scenarios within car systems, navigation or mobile devices. Whether they are used for navigating home or to any other destination, they are an essential service of today’s life.
-% While the above-mentioned positioning systems work great and reliable in outdoor environments, their performance and results are poor in indoor environments. Outdoor positioning systems such as GPS operate in direct line-of-sight scenarios with the satel- lites, which is not given indoors. As described by Jang and Kim [11], GPS signals cannot move easily through solid objects, as they get attenuated by e.g. walls. Moreover, the signals get reflected by the objects, which leads to inaccurate positioning results.
-% To compensate the drawbacks of outdoor positioning systems in indoor scenarios, indoor positioning systems were developed to provide more reasonable results within buildings, but with the restriction to work only in specific indoor environments and not outside of its boundaries. Like outdoor positioning systems, they also provide means for localization and navigation, but within buildings using technologies such as Wi-Fi, Bluetooth, IR or cellular networks, as stated by Liu et al. [17].
 
 % APPLE USES all available components on the device, including the Wi-Fi, GPS, Bluetooth, magnetometer, barometer, and cellular hardware 
 %https://developer.apple.com/documentation/corelocation
@@ -248,19 +244,21 @@ Urban canyons, mountain valleys, tunnels and dense forests can create radio shad
 Furthermore, as Enge \cite{enge1994global} and Ruegamer et al. \cite{ruegamer2015jamming} highlight, \acs{GNSS} is vulnerable to jamming, where interference blocks satellite signals, and spoofing, where fake signals deceive receivers into showing incorrect positions or times.
 
 \subsection{Wi-Fi and Bluetooth Positioning Systems}
-%Stelzhammer
-% p. 17f
-% As described by Küpper [12], WLAN positioning systems typically rely on measurements of the Received Signal Strength (RSS), the received Signal to Noise Ratio (SNR), or proximity sensing. RSS and SNR are based on packets, the so-called beacons, that are broadcast either in up- or downlink. The receiver measures RSS and SNR of beacons and provides it to user-level applications.
-% The observation of beacons can be used for several positioning methods, depending on their usage in up- or downlink. When using uplink, mobile terminals have to explicitly generate and broadcast these beacons to receivers in the proximity. On the contrary, for downlink a standard feature of WLAN is exploited. Mobile terminals continuously scan
-% the area for nearby access points to detect which access point to connect to. Because of this, each access point periodically emits a beacon that carries a number of parameters, such as a timestamp or the supported data rates. When used for positioning, the terminal receives these beacons and records their parameters and measured RSS and SNR values. If no beacon is received during passive scanning, the terminal can prompt the access points to emit a beacon by sending a so-called probe request. This practice is referred to as active scanning. Active scanning has been incorporated into the IEEE 802.11 standard [20] in 2016. Using round-trip delay time, devices are able to trilaterate indoor positions using three or more access points in the facility. However, most devices do not support the ncessary hardware yet.
-% Proximity sensing is the simplest positioning technique to implement. Backed by a respective database, the BSSIDs of the access points are mapped to rooms inside a building. In more advanced approaches, the room number is transmitted as a parameter of the beacon by the access point. The accuracy of proximity sensing strongly depends on the transmitted signal strength as well as the density of access points inside the building. Worst case such systems can only detect whether a person currently resides inside a building or a particular wing of the building. Proximity sensing has been explained in more detail in Subsection 2.1.2.
-% To be able to apply lateration, the access points inside the building must be aligned correctly. These positions are then expressed by a coordinate system overlaid on the base of the building. Taking into account the building’s construction plans, position fixes can be mapped to room numbers. A major downside of lateration in indoor environments is its susceptibility to obstruction of line-of-sight. When travelling from sender to receiver, the signal is reflected and attenuated along the way. This multipath propagation has severe impacts on the accuracy of WLAN-based lateration, as it is near impossible to infer correct ranges. Lateration has already been presented in Subsection 2.1.3.
-% The most popular approach for WLAN-based indoor positioning is fingerprinting. Fingerprinting consists of collecting physical measurements at predefined destinations. Most typically the RSS values of the surrounding access points are collected. The posi- tion of the target is then derived to be the position of one of the traces, more specifically the one that matches the target’s physical measurements at their position the most. Fin- gerprinting has been covered in more detail in Subection 2.1.6.
-%Hosic 
-%2.3.4 Wi-Fi-based Indoor Positioning p. 17f
-% Wi-Fi-based infrastructures are one of the most commonly used technologies in in- door positioning and utilize existent Wi-Fi networks for the purpose of localization. One of the biggest advantages of this technology is its ubiquitous accessibility and that no additional equipment for localization is needed.
-%Bluetooth and Bluetooth Low Energy (BLE) use beacons for localization of targets. Other than different technologies, Bluetooth-based infrastructures are used more for logical localization, instead of the calculation of absolute positions. The beacons identify rooms or sectors with their identifier within buildings, which are in close proximity to the target. Beacons are cheap and can be widely deployed, but are usually deployed in combination with other technologies such as Wi-Fi, due to their limited accuracy.
-% lateration in indoor settings has the problem that wifi access points often don't have known, fixed locations
+While outdoor positioning systems such as \acs{GNSS} work reliably in open environments, they struggle indoors due to the obstruction of signals caused by solid objects like walls.
+Hence, \ac{IPS} have been developed to provide locating and navigation capabilities within buildings using technologies like \acs{Wi-Fi} and Bluetooth.
+% As noted by Liu et. al \cite{liu2007survey}, other technologies like UWB, RF and IR offer higher resolution indoors, but the accuracy of \acs{Wi-Fi} and Bluetooth positioning is in the range of a few meters which is sufficient for the purpose of this study.
+
+\acs{Wi-Fi}-based positioning is widely used due to the ubiquity of \acs{APs} in indoor spaces and the minimal need for additional infrastructure.
+According to K\"upper \cite{kupper2005location}, \acs{Wi-Fi} positioning relies on measuring the \acs{RSS}, \ac{SNR} or proximity to beacons, which can either be passively received from access points in the downlink or actively transmitted by devices in the uplink.
+\acs{Wi-Fi} signals can cover relatively long ranges of 50 to 100 meters, reducing the number of devices needed for coverage in shopping malls or airports.
+Unlike optical technologies such as infrared, \acs{Wi-Fi} does not require a direct line of sight which makes it scalable. 
+However, its long range is also a disadvantage for accurate positioning, as signals can be affected by interference, obstacles like walls or metal structures and reflections from other surfaces. 
+Additionally, privacy concerns arise as users frequently connect to \acs{Wi-Fi} network which raises potential issues regarding tracking and data collection.
+
+With a shorter range of 10 to 15 meters compared to \acs{Wi-Fi}, Bluetooth typically determines a target's general location or proximity rather than absolute positions. 
+Bluetooth beacons, which are small, low-cost transmitters, play an important role in indoor positioning by continuously broadcasting signals that can be detected by nearby devices.
+In addition, Bluetooth devices can also form ad hoc networks, where they connect directly and exchange location information, allowing them to approximate positions without relying on a fixed infrastructure.
+However, as stated by Kolodziej and Hjelm \cite{kolodziej2017local}, both \acs{Wi-Fi} and Bluetooth systems tend to have a high battery consumption “because the tags have to engage in protocols […] that offer relatively little support for power saving”.
 
 \subsection{Inertial Navigation Systems}
 % still important today in the navigation of aircraft, ships and automobiles.
