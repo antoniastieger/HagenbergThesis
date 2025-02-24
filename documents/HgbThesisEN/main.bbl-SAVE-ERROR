@@ -1,0 +1,1543 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{arora2023location}{article}{}
+      \name{author}{2}{}{%
+        {{hash=32e044a89f996d9db21477f205f5d118}{%
+           family={Arora},
+           familyi={A\bibinitperiod},
+           given={Parul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=b5f5df4a3fbffcec877a34deec7b9035}{%
+           family={Deswal},
+           familyi={D\bibinitperiod},
+           given={Suman},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Bentham Science Publishers direct}%
+      }
+      \strng{namehash}{d74914ce6c32d33215f032bea7644f41}
+      \strng{fullhash}{d74914ce6c32d33215f032bea7644f41}
+      \strng{bibnamehash}{d74914ce6c32d33215f032bea7644f41}
+      \strng{authorbibnamehash}{d74914ce6c32d33215f032bea7644f41}
+      \strng{authornamehash}{d74914ce6c32d33215f032bea7644f41}
+      \strng{authorfullhash}{d74914ce6c32d33215f032bea7644f41}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Recent Patents on Engineering}
+      \field{number}{5}
+      \field{title}{Location Tracking Mechanisms for Dementia Patients}
+      \field{volume}{17}
+      \field{year}{2023}
+      \field{pages}{69\bibrangedash 80}
+      \range{pages}{12}
+    \endentry
+    \entry{enge1994global}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ce9ae10f8c36bf312c717f3ccb05d5c4}{%
+           family={Enge},
+           familyi={E\bibinitperiod},
+           given={Per\bibnamedelima K},
+           giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{ce9ae10f8c36bf312c717f3ccb05d5c4}
+      \strng{fullhash}{ce9ae10f8c36bf312c717f3ccb05d5c4}
+      \strng{bibnamehash}{ce9ae10f8c36bf312c717f3ccb05d5c4}
+      \strng{authorbibnamehash}{ce9ae10f8c36bf312c717f3ccb05d5c4}
+      \strng{authornamehash}{ce9ae10f8c36bf312c717f3ccb05d5c4}
+      \strng{authorfullhash}{ce9ae10f8c36bf312c717f3ccb05d5c4}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Wireless Information Networks}
+      \field{title}{The Global Positioning System: Signals, Measurements, and Performance}
+      \field{volume}{1}
+      \field{year}{1994}
+      \field{pages}{83\bibrangedash 105}
+      \range{pages}{23}
+    \endentry
+    \entry{friman2009satisfaction}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3d73271ca199d64346428a71b0ca9483}{%
+           family={Friman},
+           familyi={F\bibinitperiod},
+           given={Margareta},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9330d31d5aa351d7f773a219c2e9c31f}{%
+           family={Fellesson},
+           familyi={F\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{4c06dc14d8f89386a50b13288a58b2f9}
+      \strng{fullhash}{4c06dc14d8f89386a50b13288a58b2f9}
+      \strng{bibnamehash}{4c06dc14d8f89386a50b13288a58b2f9}
+      \strng{authorbibnamehash}{4c06dc14d8f89386a50b13288a58b2f9}
+      \strng{authornamehash}{4c06dc14d8f89386a50b13288a58b2f9}
+      \strng{authorfullhash}{4c06dc14d8f89386a50b13288a58b2f9}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Public Transportation}
+      \field{month}{12}
+      \field{title}{Service Supply and Customer Satisfaction in Public Transportation: The Quality Paradox}
+      \field{volume}{12}
+      \field{year}{2009}
+      \verb{doi}
+      \verb 10.5038/2375-0901.12.4.4
+      \endverb
+    \endentry
+    \entry{greenwald2011geofencing}{article}{}
+      \name{author}{4}{}{%
+        {{hash=5600590b76e22c08b6cb204a1d226f70}{%
+           family={Greenwald},
+           familyi={G\bibinitperiod},
+           given={Amie},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3fdfbf54f3dcdcfdf5b9c8c81592b61d}{%
+           family={Hampel},
+           familyi={H\bibinitperiod},
+           given={Georg},
+           giveni={G\bibinitperiod}}}%
+        {{hash=510fd41107383c86a487bb4329add3ac}{%
+           family={Phadke},
+           familyi={P\bibinitperiod},
+           given={Chitra},
+           giveni={C\bibinitperiod}}}%
+        {{hash=210fb3800b6948f90622e701b9750263}{%
+           family={Poosala},
+           familyi={P\bibinitperiod},
+           given={Viswanath},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{dbf0f9d95b2a3aa47789773a01e99320}
+      \strng{fullhash}{0aa3cb7f7611e96ca5c69facab155ea3}
+      \strng{bibnamehash}{dbf0f9d95b2a3aa47789773a01e99320}
+      \strng{authorbibnamehash}{dbf0f9d95b2a3aa47789773a01e99320}
+      \strng{authornamehash}{dbf0f9d95b2a3aa47789773a01e99320}
+      \strng{authorfullhash}{0aa3cb7f7611e96ca5c69facab155ea3}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bell Labs Technical Journal}
+      \field{number}{2}
+      \field{title}{An economically viable solution to geofencing for mass-market applications}
+      \field{volume}{16}
+      \field{year}{2011}
+      \field{pages}{21\bibrangedash 38}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1002/bltj.20500
+      \endverb
+    \endentry
+    \entry{grejner2004positioning}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b4dd8fd992694f022ebe27d869ae6b7d}{%
+           family={Grejner-Brzezinska},
+           familyi={G\bibinithyphendelim B\bibinitperiod},
+           given={Dorota},
+           giveni={D\bibinitperiod}}}%
+        {{hash=c1b6220be9bbdc77f7fcc97fd2b3872a}{%
+           family={Kealy},
+           familyi={K\bibinitperiod},
+           given={Allison},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{dac62c24ba86d346e1c475611291cbcc}
+      \strng{fullhash}{dac62c24ba86d346e1c475611291cbcc}
+      \strng{bibnamehash}{dac62c24ba86d346e1c475611291cbcc}
+      \strng{authorbibnamehash}{dac62c24ba86d346e1c475611291cbcc}
+      \strng{authornamehash}{dac62c24ba86d346e1c475611291cbcc}
+      \strng{authorfullhash}{dac62c24ba86d346e1c475611291cbcc}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advanced Location-Based Technologies and Services}
+      \field{title}{Positioning and tracking approaches and technologies}
+      \field{year}{2004}
+      \field{pages}{1}
+      \range{pages}{1}
+    \endentry
+    \entry{kadam2020crops}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b4720a0a0da8f281890dc3f318129482}{%
+           family={Kadam},
+           familyi={K\bibinitperiod},
+           given={Ashwini\bibnamedelima L},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=bfafe41aea1887733458f89c32c1622b}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Hoon},
+           giveni={H\bibinitperiod}}}%
+        {{hash=35d36e24159158c227d684901a5b75dd}{%
+           family={Hwang},
+           familyi={H\bibinitperiod},
+           given={Mintae},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{2f4f733a32fdbfd0f751b083bd66fca5}
+      \strng{fullhash}{2f4f733a32fdbfd0f751b083bd66fca5}
+      \strng{bibnamehash}{2f4f733a32fdbfd0f751b083bd66fca5}
+      \strng{authorbibnamehash}{2f4f733a32fdbfd0f751b083bd66fca5}
+      \strng{authornamehash}{2f4f733a32fdbfd0f751b083bd66fca5}
+      \strng{authorfullhash}{2f4f733a32fdbfd0f751b083bd66fca5}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Asia-pacific Journal of Convergent Research Interchange}
+      \field{number}{6}
+      \field{title}{Implementation of IoT application using geofencing technology for protecting crops from wild animals}
+      \field{volume}{6}
+      \field{year}{2020}
+      \field{pages}{13\bibrangedash 23}
+      \range{pages}{11}
+    \endentry
+    \entry{kolodziej2017local}{book}{}
+      \name{author}{2}{}{%
+        {{hash=9c2453a31fe82bbcd70a5e32561c33e0}{%
+           family={Kolodziej},
+           familyi={K\bibinitperiod},
+           given={Krzysztof\bibnamedelima W},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=92cf5725d9a10515dc3772cffa388df2}{%
+           family={Hjelm},
+           familyi={H\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {CRC press}%
+      }
+      \strng{namehash}{3e02ba78b41ca82e3abb42bdc1bbf6bc}
+      \strng{fullhash}{3e02ba78b41ca82e3abb42bdc1bbf6bc}
+      \strng{bibnamehash}{3e02ba78b41ca82e3abb42bdc1bbf6bc}
+      \strng{authorbibnamehash}{3e02ba78b41ca82e3abb42bdc1bbf6bc}
+      \strng{authornamehash}{3e02ba78b41ca82e3abb42bdc1bbf6bc}
+      \strng{authorfullhash}{3e02ba78b41ca82e3abb42bdc1bbf6bc}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Local positioning systems: LBS applications and services}
+      \field{year}{2017}
+    \endentry
+    \entry{kupper2005location}{book}{}
+      \name{author}{1}{}{%
+        {{hash=a3fbf7d3aa132f8cdcda5594c2ee7620}{%
+           family={Küpper},
+           familyi={K\bibinitperiod},
+           given={Axel},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{a3fbf7d3aa132f8cdcda5594c2ee7620}
+      \strng{fullhash}{a3fbf7d3aa132f8cdcda5594c2ee7620}
+      \strng{bibnamehash}{a3fbf7d3aa132f8cdcda5594c2ee7620}
+      \strng{authorbibnamehash}{a3fbf7d3aa132f8cdcda5594c2ee7620}
+      \strng{authornamehash}{a3fbf7d3aa132f8cdcda5594c2ee7620}
+      \strng{authorfullhash}{a3fbf7d3aa132f8cdcda5594c2ee7620}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Location-based services: fundamentals and operation}
+      \field{year}{2005}
+    \endentry
+    \entry{lee2014localization}{article}{}
+      \name{author}{4}{}{%
+        {{hash=40ce3683edf6ab8da38ca992f17b69ee}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Junggoo},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5b79a6adb1f6e6104215ceaaf0dae858}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Kyeongyul},
+           giveni={K\bibinitperiod}}}%
+        {{hash=39b3e92c0901b39043661a6307dc738d}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Sang-Chul},
+           giveni={S\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=0dc88b7fcd57b3a6342ab6560d8421a6}{%
+           family={Shin},
+           familyi={S\bibinitperiod},
+           given={Byeong-Seok},
+           giveni={B\bibinithyphendelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{47fb5ea4d8271cd098ef1683e46547ef}
+      \strng{fullhash}{982c91da79407fb516b9922304e95bdf}
+      \strng{bibnamehash}{47fb5ea4d8271cd098ef1683e46547ef}
+      \strng{authorbibnamehash}{47fb5ea4d8271cd098ef1683e46547ef}
+      \strng{authornamehash}{47fb5ea4d8271cd098ef1683e46547ef}
+      \strng{authorfullhash}{982c91da79407fb516b9922304e95bdf}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Distributed Sensor Networks}
+      \field{month}{08}
+      \field{title}{An Efficient Localization Method Based on Adaptive Optimal Sensor Placement}
+      \field{volume}{2014}
+      \field{year}{2014}
+      \verb{doi}
+      \verb 10.1155/2014/983618
+      \endverb
+    \endentry
+    \entry{militaru2022positioning}{article}{}
+      \name{author}{4}{}{%
+        {{hash=3ab4e4d158b20e6aecf4064905e8848a}{%
+           family={Militaru},
+           familyi={M\bibinitperiod},
+           given={Andreea-Valentina},
+           giveni={A\bibinithyphendelim V\bibinitperiod}}}%
+        {{hash=5a0cceef997c5708a8e8c54ddf41ca53}{%
+           family={Bogdan},
+           familyi={B\bibinitperiod},
+           given={Ion},
+           giveni={I\bibinitperiod}}}%
+        {{hash=8e202718745a9d4695d4389e199931b4}{%
+           family={Comsa},
+           familyi={C\bibinitperiod},
+           given={Ciprian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=bc3d6d39d8864ebb29aecfd34e163a76}{%
+           family={Caruntu},
+           familyi={C\bibinitperiod},
+           given={Constantin},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{e73a5193bb0a648988c3655ab48c0868}
+      \strng{fullhash}{fe7fd252e5570eb9eddb3f2f73df7a7a}
+      \strng{bibnamehash}{e73a5193bb0a648988c3655ab48c0868}
+      \strng{authorbibnamehash}{e73a5193bb0a648988c3655ab48c0868}
+      \strng{authornamehash}{e73a5193bb0a648988c3655ab48c0868}
+      \strng{authorfullhash}{fe7fd252e5570eb9eddb3f2f73df7a7a}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bulletin of the Polytechnic Institute of Iași. Electrical Engineering, Power Engineering, Electronics Section}
+      \field{month}{02}
+      \field{title}{Positioning Key Elements for Increasing Localization Precision of the VRUs in 5G NR Environments}
+      \field{volume}{68}
+      \field{year}{2022}
+      \field{pages}{57\bibrangedash 76}
+      \range{pages}{20}
+    \endentry
+    \entry{minelgaitė2020sustainability}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c58686c46191e01081a81518814a6d81}{%
+           family={Minelgaitė},
+           familyi={M\bibinitperiod},
+           given={Audronė},
+           giveni={A\bibinitperiod}}}%
+        {{hash=db85c6ee806a29cfed87dd566bd9e77c}{%
+           family={Dagiliūtė},
+           familyi={D\bibinitperiod},
+           given={Renata},
+           giveni={R\bibinitperiod}}}%
+        {{hash=617b19528a96ceb7a760082cdd7ea1e0}{%
+           family={Liobikienė},
+           familyi={L\bibinitperiod},
+           given={Genovaitė},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{d38f37bcd0ffd5e8f34f5d858f7c6367}
+      \strng{fullhash}{d38f37bcd0ffd5e8f34f5d858f7c6367}
+      \strng{bibnamehash}{d38f37bcd0ffd5e8f34f5d858f7c6367}
+      \strng{authorbibnamehash}{d38f37bcd0ffd5e8f34f5d858f7c6367}
+      \strng{authornamehash}{d38f37bcd0ffd5e8f34f5d858f7c6367}
+      \strng{authorfullhash}{d38f37bcd0ffd5e8f34f5d858f7c6367}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2071-1050}
+      \field{journaltitle}{Sustainability}
+      \field{number}{21}
+      \field{title}{The Usage of Public Transport and Impact of Satisfaction in the European Union}
+      \field{volume}{12}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.3390/su12219154
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2071-1050/12/21/9154
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2071-1050/12/21/9154
+      \endverb
+    \endentry
+    \entry{mushiba2024gsm}{book}{}
+      \name{author}{1}{}{%
+        {{hash=8445392966c1f29aa91d19a6e0bf38e1}{%
+           family={Mushiba},
+           familyi={M\bibinitperiod},
+           given={Abel},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{8445392966c1f29aa91d19a6e0bf38e1}
+      \strng{fullhash}{8445392966c1f29aa91d19a6e0bf38e1}
+      \strng{bibnamehash}{8445392966c1f29aa91d19a6e0bf38e1}
+      \strng{authorbibnamehash}{8445392966c1f29aa91d19a6e0bf38e1}
+      \strng{authornamehash}{8445392966c1f29aa91d19a6e0bf38e1}
+      \strng{authorfullhash}{8445392966c1f29aa91d19a6e0bf38e1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{ADVANCED TELECOMMUNICATIONS TECHNOLOGIES - A Comprehensive Guide to GSM, UMTS, LTE, and 5G}
+      \field{year}{2024}
+    \endentry
+    \entry{reclus2009fleet}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=b93440e29a22d9f8acb23dc09872b5f5}{%
+           family={Reclus},
+           familyi={R\bibinitperiod},
+           given={Fabrice},
+           giveni={F\bibinitperiod}}}%
+        {{hash=7fc0f63c49882d6a49856f92c356cbc1}{%
+           family={Drouard},
+           familyi={D\bibinitperiod},
+           given={Kristen},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{9fb6b0f0afcbc94d882c6ab96f94b1fa}
+      \strng{fullhash}{9fb6b0f0afcbc94d882c6ab96f94b1fa}
+      \strng{bibnamehash}{9fb6b0f0afcbc94d882c6ab96f94b1fa}
+      \strng{authorbibnamehash}{9fb6b0f0afcbc94d882c6ab96f94b1fa}
+      \strng{authornamehash}{9fb6b0f0afcbc94d882c6ab96f94b1fa}
+      \strng{authorfullhash}{9fb6b0f0afcbc94d882c6ab96f94b1fa}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2009 9th International Conference on Intelligent Transport Systems Telecommunications, (ITST)}
+      \field{title}{Geofencing for fleet and freight management}
+      \field{year}{2009}
+      \field{pages}{353\bibrangedash 356}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/ITST.2009.5399328
+      \endverb
+    \endentry
+    \entry{ruegamer2015jamming}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{hash=410e6a7a041e20315e533fc910fcc704}{%
+           family={Ruegamer},
+           familyi={R\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=fe6ef6cc3e476f10981cb70e1b954d60}{%
+           family={Kowalewski},
+           familyi={K\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{45837c62334deb85588d20be367d28f1}
+      \strng{fullhash}{45837c62334deb85588d20be367d28f1}
+      \strng{bibnamehash}{45837c62334deb85588d20be367d28f1}
+      \strng{authorbibnamehash}{45837c62334deb85588d20be367d28f1}
+      \strng{authornamehash}{45837c62334deb85588d20be367d28f1}
+      \strng{authorfullhash}{45837c62334deb85588d20be367d28f1}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proc. Wisdom Ages Challenges Modern World}
+      \field{title}{Jamming and spoofing of gnss signals--an underestimated risk?!}
+      \field{volume}{3}
+      \field{year}{2015}
+      \field{pages}{17\bibrangedash 21}
+      \range{pages}{5}
+    \endentry
+    \entry{sheimy2006ins}{article}{}
+      \name{author}{1}{}{%
+        {{hash=1868b48a7435091c61fb84300e5a8994}{%
+           family={El-Sheimy},
+           familyi={E\bibinithyphendelim S\bibinitperiod},
+           given={Naser},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Department of Geomatics Engineering, University of Calgary Calgary, AB, Canada}%
+      }
+      \strng{namehash}{1868b48a7435091c61fb84300e5a8994}
+      \strng{fullhash}{1868b48a7435091c61fb84300e5a8994}
+      \strng{bibnamehash}{1868b48a7435091c61fb84300e5a8994}
+      \strng{authorbibnamehash}{1868b48a7435091c61fb84300e5a8994}
+      \strng{authornamehash}{1868b48a7435091c61fb84300e5a8994}
+      \strng{authorfullhash}{1868b48a7435091c61fb84300e5a8994}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Engo 623-Course Notes}
+      \field{title}{Inertial techniques and INS/DGPS integration}
+      \field{year}{2006}
+      \field{pages}{170\bibrangedash 182}
+      \range{pages}{13}
+    \endentry
+    \entry{shevchenko2024geofencing}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7310e98dbe04db51b1b16b23cbd69cd8}{%
+           family={Shevchenko},
+           familyi={S\bibinitperiod},
+           given={Yury},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ac1fabdc71e1bf29e69fb196896b3f1c}{%
+           family={Reips},
+           familyi={R\bibinitperiod},
+           given={Ulf-Dietrich},
+           giveni={U\bibinithyphendelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{dbf44241c64d0809b87ff2ea8654cc67}
+      \strng{fullhash}{dbf44241c64d0809b87ff2ea8654cc67}
+      \strng{bibnamehash}{dbf44241c64d0809b87ff2ea8654cc67}
+      \strng{authorbibnamehash}{dbf44241c64d0809b87ff2ea8654cc67}
+      \strng{authornamehash}{dbf44241c64d0809b87ff2ea8654cc67}
+      \strng{authorfullhash}{dbf44241c64d0809b87ff2ea8654cc67}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Behavior Research Methods}
+      \field{number}{7}
+      \field{title}{Geofencing in location-based behavioral research: Methodology, challenges, and implementation}
+      \field{volume}{56}
+      \field{year}{2024}
+      \field{pages}{6411\bibrangedash 6439}
+      \range{pages}{29}
+    \endentry
+    \entry{takyiwa2023geofence}{article}{}
+      \name{author}{1}{}{%
+        {{hash=59e6387c081a6e084d9bffaf8c23db45}{%
+           family={Takyiwa-Debrah},
+           familyi={T\bibinithyphendelim D\bibinitperiod},
+           given={Akosua},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{59e6387c081a6e084d9bffaf8c23db45}
+      \strng{fullhash}{59e6387c081a6e084d9bffaf8c23db45}
+      \strng{bibnamehash}{59e6387c081a6e084d9bffaf8c23db45}
+      \strng{authorbibnamehash}{59e6387c081a6e084d9bffaf8c23db45}
+      \strng{authornamehash}{59e6387c081a6e084d9bffaf8c23db45}
+      \strng{authorfullhash}{59e6387c081a6e084d9bffaf8c23db45}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A geofence and IoT-based solution for child abduction in Ghanaian schools}
+      \field{year}{2023}
+    \endentry
+    \entry{taylor1950deadreckoning}{article}{}
+      \name{author}{1}{}{%
+        {{hash=22877a645a3b1922a80c7406e49ce153}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={E.\bibnamedelimi G.\bibnamedelimi R.},
+           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{22877a645a3b1922a80c7406e49ce153}
+      \strng{fullhash}{22877a645a3b1922a80c7406e49ce153}
+      \strng{bibnamehash}{22877a645a3b1922a80c7406e49ce153}
+      \strng{authorbibnamehash}{22877a645a3b1922a80c7406e49ce153}
+      \strng{authornamehash}{22877a645a3b1922a80c7406e49ce153}
+      \strng{authorfullhash}{22877a645a3b1922a80c7406e49ce153}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Navigation}
+      \field{number}{3}
+      \field{title}{Five Centuries of Dead Reckoning}
+      \field{volume}{3}
+      \field{year}{1950}
+      \field{pages}{280\bibrangedash 285}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1017/S0373463300034871
+      \endverb
+    \endentry
+    \entry{wei2022positioning}{article}{}
+      \name{author}{6}{}{%
+        {{hash=5912c6a792f2a1a27a6f2d7fa51d0a99}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Xiaofeng},
+           giveni={X\bibinitperiod}}}%
+        {{hash=04ed303333165182925e624e3e108742}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Shiwei},
+           giveni={S\bibinitperiod}}}%
+        {{hash=84b4956e7b931fa40210c38847c21748}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Ya},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=b64a62587f17bdd66c336e00fb25320f}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Longkang},
+           giveni={L\bibinitperiod}}}%
+        {{hash=69d6022a3dd7987406d910a14485154f}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Guochen},
+           giveni={G\bibinitperiod}}}%
+        {{hash=3a28d5fac96a6b9d24c8d07b55943634}{%
+           family={Shen},
+           familyi={S\bibinitperiod},
+           given={Feng},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{31b515aea0f3985537d32ae878fd0b7d}
+      \strng{fullhash}{0ef79876b0450f328a30c3a41107c381}
+      \strng{bibnamehash}{31b515aea0f3985537d32ae878fd0b7d}
+      \strng{authorbibnamehash}{31b515aea0f3985537d32ae878fd0b7d}
+      \strng{authornamehash}{31b515aea0f3985537d32ae878fd0b7d}
+      \strng{authorfullhash}{0ef79876b0450f328a30c3a41107c381}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Electronics}
+      \field{number}{18}
+      \field{title}{Positioning algorithm of MEMS pipeline inertial locator based on dead reckoning and information multiplexing}
+      \field{volume}{11}
+      \field{year}{2022}
+      \field{pages}{2931}
+      \range{pages}{1}
+    \endentry
+    \entry{werner2014indoor}{book}{}
+      \name{author}{1}{}{%
+        {{hash=15811b5ec1fe33466f28bf87a7c290c3}{%
+           family={Werner},
+           familyi={W\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{15811b5ec1fe33466f28bf87a7c290c3}
+      \strng{fullhash}{15811b5ec1fe33466f28bf87a7c290c3}
+      \strng{bibnamehash}{15811b5ec1fe33466f28bf87a7c290c3}
+      \strng{authorbibnamehash}{15811b5ec1fe33466f28bf87a7c290c3}
+      \strng{authornamehash}{15811b5ec1fe33466f28bf87a7c290c3}
+      \strng{authorfullhash}{15811b5ec1fe33466f28bf87a7c290c3}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Indoor Location-Based Services: Prerequisites and Foundations}
+      \field{year}{2014}
+    \endentry
+    \entry{winters2008travel}{article}{}
+      \name{author}{3}{}{%
+        {{hash=088423b2c9a93ed29e49e4f3f8499b91}{%
+           family={Winters},
+           familyi={W\bibinitperiod},
+           given={Phil},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9c96b50f73db59f50f26f9afe4fc0b4e}{%
+           family={Barbeau},
+           familyi={B\bibinitperiod},
+           given={Sean},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2233c891441f497212d8ed0d38b07633}{%
+           family={Georggi},
+           familyi={G\bibinitperiod},
+           given={Nevine},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{7bc68e7e78e34215f39000f69b803b0f}
+      \strng{fullhash}{7bc68e7e78e34215f39000f69b803b0f}
+      \strng{bibnamehash}{7bc68e7e78e34215f39000f69b803b0f}
+      \strng{authorbibnamehash}{7bc68e7e78e34215f39000f69b803b0f}
+      \strng{authornamehash}{7bc68e7e78e34215f39000f69b803b0f}
+      \strng{authorfullhash}{7bc68e7e78e34215f39000f69b803b0f}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Smart Phone Application to Influence Travel Behavior (TRAC-IT Phase 3)}
+    \endentry
+    \entry{zhang2021gnss}{article}{}
+      \name{author}{4}{}{%
+        {{hash=4b51871f45f105bdc42fb0f5a8569d4d}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Guohao},
+           giveni={G\bibinitperiod}}}%
+        {{hash=45910f32d1405c9cd46daf30a86ee2da}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Penghui},
+           giveni={P\bibinitperiod}}}%
+        {{hash=003427badfec6cb0077962ac30dbbfff}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Haosheng},
+           giveni={H\bibinitperiod}}}%
+        {{hash=5d604085c93d3658b06419849d5fd338}{%
+           family={Hsu},
+           familyi={H\bibinitperiod},
+           given={Li-Ta},
+           giveni={L\bibinithyphendelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{21dcdd64d0ac13b05b84c35d08a775d3}
+      \strng{fullhash}{d3985920bfa7e02a8ef0480e8d8bd37e}
+      \strng{bibnamehash}{21dcdd64d0ac13b05b84c35d08a775d3}
+      \strng{authorbibnamehash}{21dcdd64d0ac13b05b84c35d08a775d3}
+      \strng{authornamehash}{21dcdd64d0ac13b05b84c35d08a775d3}
+      \strng{authorfullhash}{d3985920bfa7e02a8ef0480e8d8bd37e}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Sensors Journal}
+      \field{number}{18}
+      \field{title}{Prediction on the Urban GNSS Measurement Uncertainty Based on Deep Learning Networks With Long Short-Term Memory}
+      \field{volume}{21}
+      \field{year}{2021}
+      \field{pages}{20563\bibrangedash 20577}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1109/JSEN.2021.3098006
+      \endverb
+    \endentry
+    \entry{google_maps_live_activity}{online}{}
+      \name{author}{1}{}{%
+        {{hash=0e4eab89d05b2d8eddbddb3fd0c0d142}{%
+           family={{9to5Google}},
+           familyi={9\bibinitperiod}}}%
+      }
+      \strng{namehash}{0e4eab89d05b2d8eddbddb3fd0c0d142}
+      \strng{fullhash}{0e4eab89d05b2d8eddbddb3fd0c0d142}
+      \strng{bibnamehash}{0e4eab89d05b2d8eddbddb3fd0c0d142}
+      \strng{authorbibnamehash}{0e4eab89d05b2d8eddbddb3fd0c0d142}
+      \strng{authornamehash}{0e4eab89d05b2d8eddbddb3fd0c0d142}
+      \strng{authorfullhash}{0e4eab89d05b2d8eddbddb3fd0c0d142}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-02-08}
+      \field{title}{Google Maps begins testing Live Activities on iPhone}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://9to5google.com/2024/04/24/google-maps-live-activity-iphone-testing/
+      \endverb
+      \verb{url}
+      \verb https://9to5google.com/2024/04/24/google-maps-live-activity-iphone-testing/
+      \endverb
+    \endentry
+    \entry{citymapper_ios_lock_screen_navigation}{online}{}
+      \name{author}{1}{}{%
+        {{hash=bb4b1ef8cb9552147e4ae1fd1ec6ee97}{%
+           family={{Citymapper}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{bb4b1ef8cb9552147e4ae1fd1ec6ee97}
+      \strng{fullhash}{bb4b1ef8cb9552147e4ae1fd1ec6ee97}
+      \strng{bibnamehash}{bb4b1ef8cb9552147e4ae1fd1ec6ee97}
+      \strng{authorbibnamehash}{bb4b1ef8cb9552147e4ae1fd1ec6ee97}
+      \strng{authornamehash}{bb4b1ef8cb9552147e4ae1fd1ec6ee97}
+      \strng{authorfullhash}{bb4b1ef8cb9552147e4ae1fd1ec6ee97}
+      \field{extraname}{1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-02-07}
+      \field{title}{Citymapper Introduces iOS Lock Screen Navigation}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://citymapper.com/news/2553/citymapper-introduces-ios-lock-screen-navigation
+      \endverb
+      \verb{url}
+      \verb https://citymapper.com/news/2553/citymapper-introduces-ios-lock-screen-navigation
+      \endverb
+    \endentry
+    \entry{citymapper_cities}{online}{}
+      \name{author}{1}{}{%
+        {{hash=bb4b1ef8cb9552147e4ae1fd1ec6ee97}{%
+           family={{Citymapper}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{bb4b1ef8cb9552147e4ae1fd1ec6ee97}
+      \strng{fullhash}{bb4b1ef8cb9552147e4ae1fd1ec6ee97}
+      \strng{bibnamehash}{bb4b1ef8cb9552147e4ae1fd1ec6ee97}
+      \strng{authorbibnamehash}{bb4b1ef8cb9552147e4ae1fd1ec6ee97}
+      \strng{authornamehash}{bb4b1ef8cb9552147e4ae1fd1ec6ee97}
+      \strng{authorfullhash}{bb4b1ef8cb9552147e4ae1fd1ec6ee97}
+      \field{extraname}{2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-02-08}
+      \field{title}{Citymapper Supported Cities}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://citymapper.com/cities
+      \endverb
+      \verb{url}
+      \verb https://citymapper.com/cities
+      \endverb
+    \endentry
+    \entry{gisgeography_trilateration}{online}{}
+      \name{author}{1}{}{%
+        {{hash=834a401b49aa839a05aa54f0e1981733}{%
+           family={Geography},
+           familyi={G\bibinitperiod},
+           given={GIS},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{834a401b49aa839a05aa54f0e1981733}
+      \strng{fullhash}{834a401b49aa839a05aa54f0e1981733}
+      \strng{bibnamehash}{834a401b49aa839a05aa54f0e1981733}
+      \strng{authorbibnamehash}{834a401b49aa839a05aa54f0e1981733}
+      \strng{authornamehash}{834a401b49aa839a05aa54f0e1981733}
+      \strng{authorfullhash}{834a401b49aa839a05aa54f0e1981733}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-01-05}
+      \field{title}{Trilateration vs Triangulation - How GPS Receivers Work}
+      \verb{urlraw}
+      \verb https://gisgeography.com/trilateration-triangulation-gps/
+      \endverb
+      \verb{url}
+      \verb https://gisgeography.com/trilateration-triangulation-gps/
+      \endverb
+    \endentry
+    \entry{apple_alerts}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f508f8ff22f456b2c8cef697136c83a9}{%
+           family={Inc.},
+           familyi={I\bibinitperiod},
+           given={Apple},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{fullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{bibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorbibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authornamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorfullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \field{extraname}{1}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-11-04}
+      \field{title}{Alerts}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://developer.apple.com/design/human-interface-guidelines/alerts
+      \endverb
+      \verb{url}
+      \verb https://developer.apple.com/design/human-interface-guidelines/alerts
+      \endverb
+    \endentry
+    \entry{apple_sound_guidelines}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f508f8ff22f456b2c8cef697136c83a9}{%
+           family={Inc.},
+           familyi={I\bibinitperiod},
+           given={Apple},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{fullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{bibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorbibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authornamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorfullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \field{extraname}{2}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-11-04}
+      \field{title}{Audio Services: Play Alert Sound}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://developer.apple.com/documentation/audiotoolbox/1405202-audioservicesplayalertsound
+      \endverb
+      \verb{url}
+      \verb https://developer.apple.com/documentation/audiotoolbox/1405202-audioservicesplayalertsound
+      \endverb
+    \endentry
+    \entry{apple_corelocation}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f508f8ff22f456b2c8cef697136c83a9}{%
+           family={Inc.},
+           familyi={I\bibinitperiod},
+           given={Apple},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{fullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{bibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorbibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authornamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorfullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \field{extraname}{3}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-11-03}
+      \field{title}{Core Location}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://developer.apple.com/documentation/corelocation
+      \endverb
+      \verb{url}
+      \verb https://developer.apple.com/documentation/corelocation
+      \endverb
+    \endentry
+    \entry{apple_coremotion}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f508f8ff22f456b2c8cef697136c83a9}{%
+           family={Inc.},
+           familyi={I\bibinitperiod},
+           given={Apple},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{fullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{bibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorbibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authornamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorfullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \field{extraname}{4}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-11-03}
+      \field{title}{Core Motion}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://developer.apple.com/documentation/coremotion
+      \endverb
+      \verb{url}
+      \verb https://developer.apple.com/documentation/coremotion
+      \endverb
+    \endentry
+    \entry{apple_critical_alerts}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f508f8ff22f456b2c8cef697136c83a9}{%
+           family={Inc.},
+           familyi={I\bibinitperiod},
+           given={Apple},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{fullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{bibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorbibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authornamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorfullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \field{extraname}{5}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-11-04}
+      \field{title}{Critical Alert Setting}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://developer.apple.com/documentation/usernotifications/unnotificationsettings/criticalalertsetting
+      \endverb
+      \verb{url}
+      \verb https://developer.apple.com/documentation/usernotifications/unnotificationsettings/criticalalertsetting
+      \endverb
+    \endentry
+    \entry{apple_healthkit}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f508f8ff22f456b2c8cef697136c83a9}{%
+           family={Inc.},
+           familyi={I\bibinitperiod},
+           given={Apple},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{fullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{bibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorbibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authornamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorfullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \field{extraname}{6}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-11-04}
+      \field{title}{HealthKit}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://developer.apple.com/documentation/healthkit
+      \endverb
+      \verb{url}
+      \verb https://developer.apple.com/documentation/healthkit
+      \endverb
+    \endentry
+    \entry{apple_live_activities}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f508f8ff22f456b2c8cef697136c83a9}{%
+           family={Inc.},
+           familyi={I\bibinitperiod},
+           given={Apple},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{fullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{bibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorbibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authornamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorfullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \field{extraname}{7}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-11-04}
+      \field{title}{Live Activities}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://developer.apple.com/documentation/activitykit
+      \endverb
+      \verb{url}
+      \verb https://developer.apple.com/documentation/activitykit
+      \endverb
+    \endentry
+    \entry{apple_geofencing}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f508f8ff22f456b2c8cef697136c83a9}{%
+           family={Inc.},
+           familyi={I\bibinitperiod},
+           given={Apple},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{fullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{bibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorbibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authornamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorfullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \field{extraname}{8}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-02-14}
+      \field{title}{Monitoring the user's proximity to geographic regions}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://developer.apple.com/documentation/corelocation/monitoring-the-user-s-proximity-to-geographic-regions
+      \endverb
+      \verb{url}
+      \verb https://developer.apple.com/documentation/corelocation/monitoring-the-user-s-proximity-to-geographic-regions
+      \endverb
+    \endentry
+    \entry{apple_notificationcenter}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f508f8ff22f456b2c8cef697136c83a9}{%
+           family={Inc.},
+           familyi={I\bibinitperiod},
+           given={Apple},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{fullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{bibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorbibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authornamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorfullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \field{extraname}{9}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-11-03}
+      \field{title}{Notification Center}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://developer.apple.com/documentation/foundation/notificationcenter
+      \endverb
+      \verb{url}
+      \verb https://developer.apple.com/documentation/foundation/notificationcenter
+      \endverb
+    \endentry
+    \entry{apple_haptics}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f508f8ff22f456b2c8cef697136c83a9}{%
+           family={Inc.},
+           familyi={I\bibinitperiod},
+           given={Apple},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{fullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{bibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorbibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authornamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorfullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \field{extraname}{10}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-11-04}
+      \field{title}{Playing Haptics}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://developer.apple.com/design/human-interface-guidelines/playing-haptics
+      \endverb
+      \verb{url}
+      \verb https://developer.apple.com/design/human-interface-guidelines/playing-haptics
+      \endverb
+    \endentry
+    \entry{apple_geofencing_limits}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f508f8ff22f456b2c8cef697136c83a9}{%
+           family={Inc.},
+           familyi={I\bibinitperiod},
+           given={Apple},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{fullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{bibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorbibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authornamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorfullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \field{extraname}{11}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-11-04}
+      \field{title}{Region Monitoring}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://developer.apple.com/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions
+      \endverb
+      \verb{url}
+      \verb https://developer.apple.com/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions
+      \endverb
+    \endentry
+    \entry{apple_local_notifications}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f508f8ff22f456b2c8cef697136c83a9}{%
+           family={Inc.},
+           familyi={I\bibinitperiod},
+           given={Apple},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{fullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{bibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorbibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authornamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorfullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \field{extraname}{12}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-11-02}
+      \field{title}{Scheduling a Notification Locally from Your App}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://developer.apple.com/documentation/usernotifications/scheduling-a-notification-locally-from-your-app
+      \endverb
+      \verb{url}
+      \verb https://developer.apple.com/documentation/usernotifications/scheduling-a-notification-locally-from-your-app
+      \endverb
+    \endentry
+    \entry{apple_push_notifications}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f508f8ff22f456b2c8cef697136c83a9}{%
+           family={Inc.},
+           familyi={I\bibinitperiod},
+           given={Apple},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{fullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{bibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorbibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authornamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorfullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \field{extraname}{13}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-11-02}
+      \field{title}{Setting Up a Remote Notification Server}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server
+      \endverb
+      \verb{url}
+      \verb https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server
+      \endverb
+    \endentry
+    \entry{apple_timer}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f508f8ff22f456b2c8cef697136c83a9}{%
+           family={Inc.},
+           familyi={I\bibinitperiod},
+           given={Apple},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{fullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{bibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorbibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authornamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorfullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \field{extraname}{14}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-11-02}
+      \field{title}{Timer}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://developer.apple.com/documentation/foundation/timer
+      \endverb
+      \verb{url}
+      \verb https://developer.apple.com/documentation/foundation/timer
+      \endverb
+    \endentry
+    \entry{apple_calender_trigger}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f508f8ff22f456b2c8cef697136c83a9}{%
+           family={Inc.},
+           familyi={I\bibinitperiod},
+           given={Apple},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{fullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{bibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorbibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authornamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorfullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \field{extraname}{15}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-11-04}
+      \field{title}{UNCalendarNotificationTrigger}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://developer.apple.com/documentation/usernotifications/uncalendarnotificationtrigger
+      \endverb
+      \verb{url}
+      \verb https://developer.apple.com/documentation/usernotifications/uncalendarnotificationtrigger
+      \endverb
+    \endentry
+    \entry{apple_location_trigger}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f508f8ff22f456b2c8cef697136c83a9}{%
+           family={Inc.},
+           familyi={I\bibinitperiod},
+           given={Apple},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{fullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{bibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorbibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authornamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorfullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \field{extraname}{16}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-11-04}
+      \field{title}{UNLocationNotificationTrigger}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://developer.apple.com/documentation/usernotifications/unlocationnotificationtrigger
+      \endverb
+      \verb{url}
+      \verb https://developer.apple.com/documentation/usernotifications/unlocationnotificationtrigger
+      \endverb
+    \endentry
+    \entry{apple_time_trigger}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f508f8ff22f456b2c8cef697136c83a9}{%
+           family={Inc.},
+           familyi={I\bibinitperiod},
+           given={Apple},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{fullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{bibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorbibnamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authornamehash}{f508f8ff22f456b2c8cef697136c83a9}
+      \strng{authorfullhash}{f508f8ff22f456b2c8cef697136c83a9}
+      \field{extraname}{17}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-11-04}
+      \field{title}{UNTimeIntervalNotificationTrigger}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://developer.apple.com/documentation/usernotifications/untimeintervalnotificationtrigger
+      \endverb
+      \verb{url}
+      \verb https://developer.apple.com/documentation/usernotifications/untimeintervalnotificationtrigger
+      \endverb
+    \endentry
+    \entry{mit2023}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a011ebaa4f7b852ff44344242622c765}{%
+           family={{Massachusetts Institute of Technology}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a011ebaa4f7b852ff44344242622c765}
+      \strng{fullhash}{a011ebaa4f7b852ff44344242622c765}
+      \strng{bibnamehash}{a011ebaa4f7b852ff44344242622c765}
+      \strng{authorbibnamehash}{a011ebaa4f7b852ff44344242622c765}
+      \strng{authornamehash}{a011ebaa4f7b852ff44344242622c765}
+      \strng{authorfullhash}{a011ebaa4f7b852ff44344242622c765}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-08-26}
+      \field{title}{Public Transportation}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://climate.mit.edu/explainers/public-transportation
+      \endverb
+      \verb{url}
+      \verb https://climate.mit.edu/explainers/public-transportation
+      \endverb
+    \endentry
+    \entry{moovit_about}{online}{}
+      \name{author}{1}{}{%
+        {{hash=e4ae7720c8c5ee45ab891b7f80bca81f}{%
+           family={{Moovit Inc.}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{e4ae7720c8c5ee45ab891b7f80bca81f}
+      \strng{fullhash}{e4ae7720c8c5ee45ab891b7f80bca81f}
+      \strng{bibnamehash}{e4ae7720c8c5ee45ab891b7f80bca81f}
+      \strng{authorbibnamehash}{e4ae7720c8c5ee45ab891b7f80bca81f}
+      \strng{authornamehash}{e4ae7720c8c5ee45ab891b7f80bca81f}
+      \strng{authorfullhash}{e4ae7720c8c5ee45ab891b7f80bca81f}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-02-10}
+      \field{title}{About Moovit}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://moovit.com/about-us/
+      \endverb
+      \verb{url}
+      \verb https://moovit.com/about-us/
+      \endverb
+    \endentry
+    \entry{citymapper_getoffalerts}{online}{}
+      \name{author}{1}{}{%
+        {{hash=e4ae7720c8c5ee45ab891b7f80bca81f}{%
+           family={{Moovit Inc.}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{e4ae7720c8c5ee45ab891b7f80bca81f}
+      \strng{fullhash}{e4ae7720c8c5ee45ab891b7f80bca81f}
+      \strng{bibnamehash}{e4ae7720c8c5ee45ab891b7f80bca81f}
+      \strng{authorbibnamehash}{e4ae7720c8c5ee45ab891b7f80bca81f}
+      \strng{authornamehash}{e4ae7720c8c5ee45ab891b7f80bca81f}
+      \strng{authorfullhash}{e4ae7720c8c5ee45ab891b7f80bca81f}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-02-10}
+      \field{title}{Citymapper'S Get Off Alerts}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://citymapper.com/news/823/get-off-alerts
+      \endverb
+      \verb{url}
+      \verb https://citymapper.com/news/823/get-off-alerts
+      \endverb
+    \endentry
+    \entry{transistorsoft_geofence}{online}{}
+      \name{author}{1}{}{%
+        {{hash=dc9c77a15b1951a68a9ed9424e913b7c}{%
+           family={Software},
+           familyi={S\bibinitperiod},
+           given={Transistor},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{dc9c77a15b1951a68a9ed9424e913b7c}
+      \strng{fullhash}{dc9c77a15b1951a68a9ed9424e913b7c}
+      \strng{bibnamehash}{dc9c77a15b1951a68a9ed9424e913b7c}
+      \strng{authorbibnamehash}{dc9c77a15b1951a68a9ed9424e913b7c}
+      \strng{authornamehash}{dc9c77a15b1951a68a9ed9424e913b7c}
+      \strng{authorfullhash}{dc9c77a15b1951a68a9ed9424e913b7c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-02-14}
+      \field{title}{Geofence Interface — React Native Background Geolocation}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://transistorsoft.github.io/react-native-background-geolocation/interfaces/geofence.html
+      \endverb
+      \verb{url}
+      \verb https://transistorsoft.github.io/react-native-background-geolocation/interfaces/geofence.html
+      \endverb
+    \endentry
+    \entry{citymapper_profile}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8341b509c2537db2ee217a2a19702663}{%
+           family={{TechRound}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{8341b509c2537db2ee217a2a19702663}
+      \strng{fullhash}{8341b509c2537db2ee217a2a19702663}
+      \strng{bibnamehash}{8341b509c2537db2ee217a2a19702663}
+      \strng{authorbibnamehash}{8341b509c2537db2ee217a2a19702663}
+      \strng{authornamehash}{8341b509c2537db2ee217a2a19702663}
+      \strng{authorfullhash}{8341b509c2537db2ee217a2a19702663}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-02-08}
+      \field{title}{Startup Profile: Citymapper}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://techround.co.uk/startups/startup-profile-citymapper/
+      \endverb
+      \verb{url}
+      \verb https://techround.co.uk/startups/startup-profile-citymapper/
+      \endverb
+    \endentry
+    \entry{un2023}{online}{}
+      \name{author}{1}{}{%
+        {{hash=3cc54e2c0d69c1b76b4d49edb22dd6d1}{%
+           family={{United Nations}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{3cc54e2c0d69c1b76b4d49edb22dd6d1}
+      \strng{fullhash}{3cc54e2c0d69c1b76b4d49edb22dd6d1}
+      \strng{bibnamehash}{3cc54e2c0d69c1b76b4d49edb22dd6d1}
+      \strng{authorbibnamehash}{3cc54e2c0d69c1b76b4d49edb22dd6d1}
+      \strng{authornamehash}{3cc54e2c0d69c1b76b4d49edb22dd6d1}
+      \strng{authorfullhash}{3cc54e2c0d69c1b76b4d49edb22dd6d1}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-08-26}
+      \field{title}{Act Now: Transport}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.un.org/en/actnow/transport#:~:text=If%20your%20destination%20is%20too,tons%20of%20carbon%20emissions%20reduced.
+      \endverb
+      \verb{url}
+      \verb https://www.un.org/en/actnow/transport#:~:text=If%20your%20destination%20is%20too,tons%20of%20carbon%20emissions%20reduced.
+      \endverb
+    \endentry
+    \entry{via_acquires_citymapper}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d794d3f7b3a0a8fdbd7582f6cacb5de0}{%
+           family={{Via}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{d794d3f7b3a0a8fdbd7582f6cacb5de0}
+      \strng{fullhash}{d794d3f7b3a0a8fdbd7582f6cacb5de0}
+      \strng{bibnamehash}{d794d3f7b3a0a8fdbd7582f6cacb5de0}
+      \strng{authorbibnamehash}{d794d3f7b3a0a8fdbd7582f6cacb5de0}
+      \strng{authornamehash}{d794d3f7b3a0a8fdbd7582f6cacb5de0}
+      \strng{authorfullhash}{d794d3f7b3a0a8fdbd7582f6cacb5de0}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-02-08}
+      \field{title}{Via Acquires Citymapper to Expand its End-to-End TransitTech Solution}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://ridewithvia.com/news/via-acquires-citymapper-to-expand-its-end-to-end-transittech-solution
+      \endverb
+      \verb{url}
+      \verb https://ridewithvia.com/news/via-acquires-citymapper-to-expand-its-end-to-end-transittech-solution
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

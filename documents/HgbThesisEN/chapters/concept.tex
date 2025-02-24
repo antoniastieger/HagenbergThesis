@@ -1,32 +1,129 @@
 \chapter{Concept}
 \label{cha:Concept}
 
-\section{Overview}
+This chapter presents the conceptual approach for addressing the previously described challenges in public transportation.
+It considers how a mobile application could be designed to assist users in reaching their destinations without missing their stops.
 
-\section{Types of Alert Systems}
-\subsection{Time-Based Mode}
-% Scheduling Alerts Based on Specific Times
+A sketched prototype serves as a reference for illustrating how such an application might be structured and what functionalities could be incorporated. 
+In particular, the concept of reminder behavior is examined, exploring different triggering mechanisms and the potential use of visual, haptic and acoustic feedback to effectively notify users.
+To enable these functionalities, the system would likely require the ability to store and manage essential data, such as user preferences and reminder settings. 
+The possible structure and handling of this data are considered in this chapter.
 
-\subsection{Station-Based Mode}
-% Monitoring Stations Using Geofences
+\section{Prototype}
+The proposed system is a mobile application, likely targeting iOS, that aims to allow commuters to plan their public transport journeys and receive reminders for their selected routes.
+The idea is that users should be able to search for public transport connections by specifying a departure and arrival stop, along with the desired date and time of travel. 
+Based on these inputs, the system would provide a selection of available routes, from which users can choose the most suitable option. 
+Once a route is selected, a reminder mechanism is intended to ensure that users do not miss their desired destination stop. 
+The idea of how such a reminder system could work is explored in more detail in Section \ref{sec:behaviour}.
 
-\subsection{Distance-Based Mode}
-% Nesting Geofence Regions Around the Destination
+The main screen of the proposed application is envisioned as the central interface for the trip planning process. 
+It is structured around a selection section where the user can specify their journey details. 
+At the top of this screen, two fields represent the departure and destination stops, displayed in an "A to B" format. 
+Below these fields, a date and time selection is displayed with the default value set to "Depart Now", indicating immediate departure. 
+Beneath this section, a search button is prominently placed, allowing users to request available public transport connections for the specified parameters.
+When a user taps on either the departure or destination field, a dropdown menu is envisioned to appear, providing a list of selectable public transport stops. 
+The exact filtering process for these stop suggestions is not further defined in this concept. 
+However, it is anticipated that an open \ac{API} for public transport data endpoints would be required to dynamically populate the list with available stops.
 
-% \section{Alerts on Smartphones}
-% For the implementation of a user-focused alert app in public transportation that ensures the passengers get reminded when to get off in an effective manner, notifications only aren't sufficient enough. So, this app will support vibrations and alarms as well as notifications. 
+If users wish to modify their departure time, tapping on the "Depart Now" button is expected to open a selection screen that slides up from the bottom of the screen, allowing them to specify a custom date and time. 
+Once all trip planning parameters have been set, the system should search for available public transport routes matching the user's request.
+The results screen displays the retrieved connections in a structured format. 
+Each entry should present departure and arrival times, the transport service's identification (such as the line number or train designation) and the duration of the trip.
+From this list, users should be able to select a preferred route, after which the reminder system will be activated for their journey.
+The sketched prototype in Figure \ref{fig:prototype} provides a visual representation of this envisioned process.
 
-% \subsection{Alert Types}
-% The primary users of the alert app are passengers in public transportation, where it is common for people to travel alongside others in shared spaces. In this setting, it's important to alert users effectively while avoiding disruption to other passengers. To address this need, the app incorporates a tiered system of three escalating alert types. These alert types range from minimally intrusive notifications to highly noticeable alarms, allowing users to select their preferred alert level.
-% This tiered approach ensures that users receive the necessary alerts without causing undue disruption, enhancing both user experience and public courtesy.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Prototype.pdf}
+    \caption{Prototype of a reminder app for public transportation}
+    \label{fig:prototype}
+\end{figure}
 
-% When a user approaches their designated stop, the app's first alert is always a notification, as it is the least intrusive option. This notification is mandatory and cannot be disabled by the user. However, certain device settings, such as silent mode, can reduce its effectiveness by muting audible cues. Additionally, by default push notifications aren't being displayed when an app is in the foreground state. Now users may wish to monitor their location on the map, which would prevent visual notifications unless the app is in the background. But this can be addressed programmatically, as discussed further in Chapter 5.
-% Therefore, notifications alone are sufficient only when users have their device in hand and are able to see or hear the alert.
+\section{Reminder Behaviour}
+\label{sec:behaviour}
+Once a user has selected a public transport connection, the app should provide a reminder mechanism of some sort.
+The proposed concept aims to give users full control over how and when these reminders are triggered, ensuring they are noticeable even if the user is asleep or distracted.
+The approach to reminder behavior can be divided into two key aspects: escalation and triggers. 
+Escalation refers to how the intensity of feedback increases as the journey progresses, ensuring that users become more aware of their approaching stop. 
+This could involve a gradual shift from subtle visual cues to more intrusive haptic or acoustic signals. 
+Triggers, on the other hand, determine when these reminders are activated. 
+Different approaches can be considered, relying either on arrival times or on the user's location and proximity to their destination. 
+The following subsections explore these aspects in more detail.
 
-% Building on the limitations of notifications, the app's second alert is vibration, which users can select if preferred. Vibration provides a moderately more noticeable alert without disturbing other passengers, as it is silent. This option is particularly useful if the phone is in silent mode or if the user is distracted and it functions if the app's in both the foreground and background.
-% However, vibrations alone may still be insufficient in certain cases. For example, if the user is asleep, or if the phone is stored in a bag where the vibration may not be felt, the alert might go unnoticed. Additionally, since the vibration is not accompanied by a visual cue, users may forget they set a reminder or may mistake the vibration for a different type of alert.
+\subsection{Escalations}
+\label{sec:escalations}
+Unlike conventional transit apps discussed in Chapter \ref{cha:RelatedWork}, which primarily provide route and schedule information and, at best, basic notifications or live activity updates, this approach emphasizes ensuring that users receive reminders in a way that effectively captures their attention. 
+To make sure that alerts are reliably noticed, different types of feedback mechanisms can be considered, including visual, haptic and acoustic signals. 
+A visual alert could appear as a notification, while a haptic signal might involve the phone vibrating.
+An acoustic signal could take the form of a loud and disruptive alarm, serving as a last-resort alert to ensure the user's awareness.
+These feedback methods may be used individually or in combination depending on the user's preference.
 
-% Finally, for cases where the user may be asleep or highly distracted, the app provides an audible alarm designed to capture the user's full attention as a third alert option. Due to its intrusive nature, this alert may be disruptive to nearby passengers. The alarm can be silenced by pressing the volume controls or by using a designated button in the app's reminder overview, which becomes available while the alarm is active.
+The way reminders escalate can follow different design approaches. 
+One possibility is a concentric structure, where layers of increasing urgency build up as the user approaches their stop. 
+In this case, the triggering would be based on proximity to the destination, requiring a system capable of estimating the user's position along the route. 
+Another approach is a sequential design, where reminders are activated at multiple predefined points throughout the journey. 
+This could involve placing triggers at specific stops before the destination or by progressively increasing alert intensity as the user nears arrival based off of fixed arrival times.
+These two approaches are illustrated in Figure \ref{fig:reminderescalations} where (a) represents the sequential model and (b) the concentric model.
 
-% \subsection{Triggers}
-% In the app the user can choose the interval in which he/she wants to receive the notification, the triggers of the vibration and alarm cannot be altered by the user. But depending on the preferred trigger type, the user can choose over three modes which are different in the triggers that activate the alerts. There is a time-based mode which uses the scheduled arrival times of public transportation and calculates the trigger time according to the estimated stop arrival time. The user can choose between wanting to receive a notification 5, 7 or 10 minutes before arrival. The vibration will happen 3 minutes before and the alarm 2 minutes. As for the staion-based mode, it uses three geofences along the route to progressively alert the user. The notification can be scheduled for 3, 4 or 5 stations before, the vibration is 2 stations before and the alarm 1. The last mode is the distance mode which relies on nested geofences around the final destination to trigger alerts. The user can choose to receive the notification 500, 750 meters, 1, 1.5 or 2 kilometers before, the vibration is 350 meters before and the alarm 250 meters.
+\begin{figure}[htbp]%
+    \centering
+    \subfloat[\centering]{{\includegraphics[width=14cm]{Perlenkette.pdf}}}%
+    \qquad
+    \subfloat[\centering]{{\includegraphics[width=12cm]{Zwiebel.pdf}}}%
+    \caption{Escalation of reminders following a sequential model (a) and a concentric model (b)}%
+    \label{fig:reminderescalations}%
+\end{figure}
+
+\subsection{Triggers}
+Beyond how reminders are structured, it must also be considered how they could be triggered in the first place. 
+The timing of these reminders plays an important role in ensuring that users are notified at the right moment during their journey. 
+Different approaches could be explored, depending on whether reminders should be based on time, location or distance to the destination.
+
+One possible approach would be to rely on fixed arrival times, where reminders could be triggered at predefined intervals before reaching the stop.
+This would ensure that users receive alerts at specific time points, regardless of external factors such as travel speed or delays. 
+Another option could be to determine triggers based on the user's location along the route, so that reminders are activated as they move closer to their destination. 
+Unlike the time-based approach, this method would not depend on scheduled arrival times but rather on the user's actual position relative to their stop.
+These two approaches might follow a sequential model as discussed in Subsection \ref{sec:escalations}, activating reminders at distinct points along the journey. 
+Alternatively, a concentric approach could be considered, where reminders are triggered based on distance to the destination, where different zones around the destination are used to trigger reminders at increasing proximity.
+In this context, it could be considered whether geofencing might be used to allow the system to detect when the user crosses predefined distance markers.
+
+\section{Data Persistence}
+It is being considered that the app will require some form of data persistence to store user preferences and reminders beyond the app's runtime. 
+This would help ensure a seamless user experience across sessions.
+
+As outlined in the previous sections, the concept envisions that users will be able to search for public transport connections from A to B. 
+Once a user selects a favorite route, the app could prompt them to define how reminders should behave according to their preferences. 
+These preferences might then serve as the basis for scheduling escalating reminders.
+To ensure flexibility, it is also being considered that users will have the option to cancel scheduled reminders if they decide not to take the journey after all, preventing unnecessary alerts.
+In terms of technical implementation, reminders could be structured as objects within a class. 
+These objects would need to be displayed in an overview within the app and made editable. 
+To maintain data consistency across sessions, storing relevant information in a database is being explored.
+However, it is not only the reminder objects themselves that might need to be saved. 
+While the concept foresees that users can configure preferences for each reminder individually, there is also the idea that frequently used settings could be saved and easily reapplied.
+
+Thus, the approach to data persistence could be divided into two components: user preferences and reminders.
+The following subsections will explore potential data structures in more detail.
+
+\subsection{User Preferences}
+For user preferences, it is being considered that the reminder behavior, whether time-based or location-based, could be represented through a mode variable that is then stored in a database.
+AAdditionally, an interval setting could define when the user receives reminders, depending on the selected mode. 
+For example, if reminders are scheduled in a time-based manner, one possible approach could be to define the interval in minutes before arrival at the destination, such as triggering a reminder five minutes before.
+In the case of a location-based mode, the interval could instead be expressed in proximity, for instance 500 meters before reaching the destination.
+Furthermore, in alignment with the escalating reminder behavior, reminders could appear in different forms. 
+These could be visual, haptic, acoustic, or a combination of them. 
+However, if a user prefers only a non-intrusive visual cue such as a notification, the app would need to account for this preference to avoid unwanted alerts.
+All of these user preference settings would need to be stored to remain consistent across app sessions.
+
+\subsection{Reminders}
+When it comes to the reminder object itself, several parameters would need to be considered.
+Depending on how the user prefers to be reminded, whether time-based or location-based, the reminder object would require different types of information.
+For a time-based reminder, storing a specific time and date would be essential.
+For a location-based reminder, storing the latitude and longitude of the destination and the starting point would be necessary so that when the system determines the user's position, it would need to compare the tracked location against the desired destination to trigger the reminder at the appropriate moment.
+How the exact parameterization of the reminder object under consideration of the different reminder modes is further discussed in Chapter \ref{cha:Implementation}.
+
+% \begin{figure}[htbp]
+%     \centering
+%     \includegraphics[width=0.5\textwidth]{Reminder.pdf}
+%     \caption{Proposed data model for Reminder objects}
+%     \label{fig:reminder}
+% \end{figure}

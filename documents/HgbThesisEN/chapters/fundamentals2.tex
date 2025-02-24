@@ -17,14 +17,14 @@ Proximity sensing, as described by K\"upper \cite{kupper2005location}, is the si
 It leverages the limited coverage range of pilot signals to detect the presence or absence of a terminal within a specific area.
 In this context, a terminal refers to a device or object whose position is being determined, such as a mobile or \ac{IoT} device.
 The nearest base station to the terminal is identified based on \ac{RSS} and since pilot signals have a limited range, the terminal's position is assumed to match the location of this base station.
-Militaru et al. \cite{militaru2024positioning} illustrate this concept in Fig.~\ref{fig:proximity2} where the terminal (UE) is surrounded by three base stations BS$_1$, BS$_2$ and BS$_3$. 
+Militaru et al. \cite{militaru2022positioning} illustrate this concept in Fig.~\ref{fig:proximity2} where the terminal (UE) is surrounded by three base stations BS$_1$, BS$_2$ and BS$_3$. 
 The terminal receives signals from all three base stations, but BS$_1$ has the strongest \acs{RSS}, indicating it is the closest. 
 As a result, BS$_1$'s coordinates are assigned as the position of the terminal.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.4\textwidth]{proximity2.pdf}
-    \caption{Proximity sensing with BS$_1$ as the nearest base station \cite{militaru2024positioning}}
+    \caption{Proximity sensing with BS$_1$ as the nearest base station \cite{militaru2022positioning}}
     \label{fig:proximity2}
 \end{figure}
 
@@ -98,12 +98,12 @@ Technically, two angle measurements are sufficient to determine a position in 2D
 These errors increase when the target is farther from the base station, making measurements less reliable at long distances.
 Additionally, in non-line-of-sight conditions, multipath propagation introduces further inaccuracies as signals reflect off obstacles and arrive at the base station from unintended directions. 
 To mitigate these errors, measurements from at least three base stations are recommended.
-Fig.~\ref{fig:angulation2} illustrates how angle measurements from three base stations intersect to determine the terminal's position.
+Militaru et al. \cite{militaru2022positioning} illustrate in Fig.~\ref{fig:angulation2} how angle measurements from three base stations intersect to determine the terminal's position.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.4\textwidth]{angulation2.pdf}
-    \caption{Angulation using three base stations \cite{militaru2024positioning}}
+    \caption{Angulation using three base stations \cite{militaru2022positioning}}
     \label{fig:angulation2}
 \end{figure}
 
@@ -215,7 +215,7 @@ This section provides an overview of positioning systems, including \ac{CPS}, \a
 %iOS and iPadOS devices might use Wi-Fi and Bluetooth to determine your location. GPS and cellular location are available on iPhone and iPad (Wi-Fi + Cellular) models.
 %https://support.apple.com/en-us/102647#:~:text=iOS%20and%20iPadOS%20devices%20might,%2DFi%20%2B%20Cellular)%20models.
 
-\subsection{Cellular Positioning Systems}
+\subsection{Cellular Positioning Systems (CPS)}
 A \acs{CPS} uses the existing infrastructure of cellular mobile phone networks to estimate the location of a device by analyzing signals exchanged between terminals and base stations.
 K\"upper \cite{kupper2005location} highlights that the first generation of \ac{LBS} mainly used proximity-based positioning methods, such as \acs{CoO}, because they were simple to implement and required minimal changes to the existing network infrastructure.
 Another benefit of \acs{CoO} is that it is network-based, so it doesn't need any special functionality on the mobile devices, meaning it works even on legacy terminals.
@@ -228,7 +228,7 @@ These challenges were particularly evident in earlier generations, where the cel
 However, as mobile networks evolved, the shift to higher frequency bands necessitated the deployment of smaller cells and denser infrastructure to maintain effective coverage, as noted by Mushiba \cite{mushiba2024gsm}. 
 Despite these advancements, cellular positioning is still often used as a complementary approach to \acs{GNSS}, providing coverage where \acs{GNSS} signals are unavailable or unreliable, such as indoors or in urban canyons.
 
-\subsection{Global Navigation Satellite Systems}
+\subsection{Global Navigation Satellite Systems (GNSS)}
 \label{sec:gnss}
 A \acs{GNSS} is a network of satellites providing real-time positioning and timing data to users worldwide and offering higher accuracy compared to cellular approaches.
 The most widely used system is the \ac{GPS} and was developed by the United States \ac{DoD} in the 1970s.
@@ -268,7 +268,7 @@ If multiple beacons are detected, the position can be calculated using \ac{RSSI}
 In addition, Bluetooth devices can form ad hoc networks, where they connect and exchange location information which allows them to detect their proximity to each other. 
 However, as stated by Kolodziej and Hjelm \cite{kolodziej2017local}, to connect the network to the physical environment, at least one terminal must have a known absolute position.
 
-\subsection{Inertial Navigation systems}
+\subsection{Inertial Navigation Systems (INS)}
 \label{sec:ins}
 The term "dead reckoning" comes from "deduced reckoning" which refers to estimating the current position by extrapolating from a previously known location which is adjusted by the observed direction of movement and velocity over time, as described by Grejner-Brzezinska and Kealy \cite{grejner2004positioning}.
 As discussed in Subsection \ref{sec:inertial}, the core of any \acs{INS} is the \acs{IMU} that combines inertial sensors like accelerometers, gyroscopes and sometimes magnetometers and barometers depending on the use case. 
@@ -380,30 +380,30 @@ IOS \cite{apple_geofencing_limits} limits the frequency of location-based notifi
 Excessive location tracking can lead to App Store rejection unless it is essential to the app's functionality. 
 Additionally, Apple states on its Dev Pages \cite{apple_geofencing} that the use of geofencing is limited to a maximum of 20 active geofences per app to allow all apps to access condition monitoring and prevent excessive battery drain or performance issues, as these features rely on shared hardware resources.
 
-\section{Speech-to-Text}
-\acs{STT} is a technology that turns spoken words into written text. 
-It works by listening to audio and using voice recognition to understand and transcribe the words. 
-The result is a text document that captures what was said. 
-While speaking is the most natural and efficient way to communicate, audio recordings alone can be difficult to review or reuse quickly. 
-This makes \acs{STT} an important tool across many fields. 
-For instance, it enables record-keeping of patient notes in healthcare or court proceedings in legal services and supports transcription of lectures in education. 
-Furthermore, it is widely used in virtual assistants to process voice commands, in closed captioning to make videos accessible to broader audiences or in creating accessibility tools for individuals with hearing impairments.
+% \section{Speech-to-Text}
+% \acs{STT} is a technology that turns spoken words into written text. 
+% It works by listening to audio and using voice recognition to understand and transcribe the words. 
+% The result is a text document that captures what was said. 
+% While speaking is the most natural and efficient way to communicate, audio recordings alone can be difficult to review or reuse quickly. 
+% This makes \acs{STT} an important tool across many fields. 
+% For instance, it enables record-keeping of patient notes in healthcare or court proceedings in legal services and supports transcription of lectures in education. 
+% Furthermore, it is widely used in virtual assistants to process voice commands, in closed captioning to make videos accessible to broader audiences or in creating accessibility tools for individuals with hearing impairments.
 
-Rabiner and Juang \cite{rabiner1993speechrecognition} explain that speech can be understood as an audio signal characterized by its frequency, amplitude and temporal patterns, which define the unique qualities of spoken language. 
-They further emphasize that speech is made up of different components that work together to create meaning and structure. 
-One of the most basic elements is phonemes, which are the smallest units of sound in a language like the "b" in "bat". 
-These phonemes combine to form syllables, which are the building blocks of words, such as "bat" having one syllable and "better" having two. 
-Beyond these, intonation patterns refer to the rise and fall of pitch in speech, which help convey emotions, emphasis or the difference between a question and a statement. 
-According to Reetz \cite{reetz2020phonetics}, the process of turning speech into text depends on acoustic properties and linguistic understanding. 
-Acoustic models focus on the sound itself, breaking down the audio into patterns like pitch, tone and duration to identify specific sounds or words. 
-Meanwhile, language models go a step further by applying rules of grammar, vocabulary and sentence structure to make sense of those sounds in context. 
-Together, these models ensure that the transcription is not only accurate in identifying the sounds but also meaningful and grammatically correct in written form.
+% Rabiner and Juang \cite{rabiner1993speechrecognition} explain that speech can be understood as an audio signal characterized by its frequency, amplitude and temporal patterns, which define the unique qualities of spoken language. 
+% They further emphasize that speech is made up of different components that work together to create meaning and structure. 
+% One of the most basic elements is phonemes, which are the smallest units of sound in a language like the "b" in "bat". 
+% These phonemes combine to form syllables, which are the building blocks of words, such as "bat" having one syllable and "better" having two. 
+% Beyond these, intonation patterns refer to the rise and fall of pitch in speech, which help convey emotions, emphasis or the difference between a question and a statement. 
+% According to Reetz \cite{reetz2020phonetics}, the process of turning speech into text depends on acoustic properties and linguistic understanding. 
+% Acoustic models focus on the sound itself, breaking down the audio into patterns like pitch, tone and duration to identify specific sounds or words. 
+% Meanwhile, language models go a step further by applying rules of grammar, vocabulary and sentence structure to make sense of those sounds in context. 
+% Together, these models ensure that the transcription is not only accurate in identifying the sounds but also meaningful and grammatically correct in written form.
 
-However, \acs{STT} faces several challenges that can impact its accuracy. 
-Background noise, such as conversations, traffic or music can interfere with speech clarity and make transcription difficult. 
-Regional accents and dialects add variability in pronunciation, which can lead to misinterpretations. 
-Additionally, Zechner and Waibel \cite{zechner20000spontaeousspeech} highlight that conversations with multiple speakers, especially when voices overlap, present difficulties in separating speech accurately. 
-Lastly, spontaneous speech with its non-standard grammar, fillers like "um" or "uh" and frequent self-corrections further complicates transcription, as stated by Furiu et al. \cite{furiu2004spontaneousspeech}. 
+% However, \acs{STT} faces several challenges that can impact its accuracy. 
+% Background noise, such as conversations, traffic or music can interfere with speech clarity and make transcription difficult. 
+% Regional accents and dialects add variability in pronunciation, which can lead to misinterpretations. 
+% Additionally, Zechner and Waibel \cite{zechner20000spontaeousspeech} highlight that conversations with multiple speakers, especially when voices overlap, present difficulties in separating speech accurately. 
+% Lastly, spontaneous speech with its non-standard grammar, fillers like "um" or "uh" and frequent self-corrections further complicates transcription, as stated by Furiu et al. \cite{furiu2004spontaneousspeech}. 
 
 \section{Conclusion}
 % WRITE HOW STT IS USED IN THE APP; SET UP REMINDERS WITH VOICE-CONTROL

@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{p}{\PYGZsh{}}\PYG{+w}{ }\PYG{n}{Note}\PYG{p}{:}\PYG{+w}{ }\PYG{err}{\PYGZdl{}\PYGZbs{}}\PYG{n}{pi}\PYG{p}{=}\PYG{err}{\PYGZbs{}}\PYG{n}{lim\PYGZus{}}\PYG{p}{\PYGZob{}}\PYG{n}{n}\PYG{err}{\PYGZbs{}}\PYG{n}{to}\PYG{err}{\PYGZbs{}}\PYG{n}{infty}\PYG{p}{\PYGZcb{}}\PYG{err}{\PYGZbs{}}\PYG{n}{frac}\PYG{p}{\PYGZob{}}\PYG{n}{P\PYGZus{}n}\PYG{p}{\PYGZcb{}\PYGZob{}}\PYG{n}{d}\PYG{p}{\PYGZcb{}}\PYG{err}{\PYGZdl{}}
+\PYG{+w}{    }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{body}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{some}\PYG{+w}{ }\PYG{n}{Scene}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{      }\PYG{n}{WindowGroup}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{         }\PYG{n}{MainTabbedView}\PYG{p}{()}
+\PYG{+w}{      }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{      }\PYG{p}{.}\PYG{n}{environment}\PYG{p}{(}\PYG{n}{localStorage}\PYG{p}{)}
+\PYG{+w}{      }\PYG{p}{.}\PYG{n}{modelContainer}\PYG{p}{(}\PYG{n}{modelContainer}\PYG{p}{)}
+\PYG{+w}{   }\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -408,25 +408,52 @@ keepspaces=true,%
 
 
 % Language Definition and Code Environment for Swift
+% Define colors for modern, softer Xcode-like Swift syntax highlighting
+\definecolor{swiftKeyword}{rgb}{0.75,0.15,0.25}   % Dark red for control flow keywords (if, else, let, var)
+\definecolor{swiftClass}{rgb}{0.55,0.45,0.85}     % Muted purple for class, struct, enums, and views
+\definecolor{swiftString}{rgb}{1.00,0.55,0.20}    % Orange for strings
+\definecolor{swiftComment}{rgb}{0.35,0.60,0.35}   % Green for comments
+\definecolor{swiftAttribute}{rgb}{0.45,0.55,0.85} % Softer blue for @State, @Binding, etc.
+\definecolor{swiftError}{rgb}{0.95,0.30,0.60}     % Pink for catch, throws, try
+\definecolor{swiftProperty}{rgb}{0.90,0.30,0.55}  % Muted pink for var, let, and body
+\definecolor{swiftInstance}{rgb}{0.50,0.75,0.75}  % Soft cyan for shared, self
+\definecolor{swiftFunction}{rgb}{0.35,0.75,0.55}  % Muted green for environment(), modelContainer()
+
 \lstdefinelanguage{Swift}
-{	keywords=[1]{typealias,true, false,catch,private,internal,public,func,protocol,%
-		optional,return,nil,catch,switch,let,as,var,if,in,for,while,where,do,else,case,%
-		break,import,class,struct,enum,override,super,required,designated,convenience},
-	keywords=[2]{String,Int,Double,Float},
-	sensitive=true,
-	morecomment=[l]{//},
-	morecomment=[s]{/*}{*/},
-	morestring=[b]',
-	morestring=[b]"
+{
+    morekeywords=[1]{if,else,for,in,while,where,do,catch,try,case,break,import,return,switch,guard,defer,insert,delete,init,fatalError,didSet},
+    morekeywords=[2]{class,struct,enum,protocol,extension,override,super,static,final,associatedtype,subscript,mutating,nonmutating},
+    morekeywords=[3]{@State,@Binding,@Environment,@ObservedObject,@Published,@MainActor,@ViewBuilder,@available,@discardableResult,@Query,@Attribute,@AppStorage,@Observable},
+    morekeywords=[5]{String,Int,Double,Float,Character,Bool,Array,Dictionary,Set,Optional,Void,Any,AnyObject,Protocol,Self,AppStorageValues,LocalStorage,ReminderMode,Reminder,DistanceInterval,TimeInterval,StationInterval},
+    morekeywords=[6]{var,let,private,self,some},
+    morekeywords=[7]{WindowGroup,MainTabbedView,ModelContainer,DistanceReminder,TimeReminder,StationReminder,LocationManager,Scene},
+    sensitive=true,
+    morecomment=[l]{//},          % Line comments
+    morecomment=[s]{/*}{*/},      % Block comments
+    morestring=[b]",              % Double-quoted strings
+    morestring=[s]{"""}{"""},     % Multiline Swift strings
+    numberstyle=\color{black},    % Numbers
+    identifierstyle=,             % Default identifier style
+    keywordstyle=[1]\color{swiftKeyword}\bfseries,  % Control flow keywords
+    keywordstyle=[2]\color{swiftClass}\bfseries,    % Classes, structs, enums
+    keywordstyle=[3]\color{swiftAttribute}\bfseries, % @State, @Binding, etc.
+    keywordstyle=[4]\color{swiftError}\bfseries,    % catch, try, throw
+    keywordstyle=[5]\color{swiftClass},             % Standard Swift types
+    keywordstyle=[6]\color{swiftProperty}\bfseries, % var, let, body, Scene
+    keywordstyle=[7]\color{swiftClass}\bfseries,    % Classes and views
+    keywordstyle=[8]\color{swiftInstance}\bfseries, % shared, self
+    keywordstyle=[9]\color{swiftFunction}\bfseries, % Methods: environment(), modelContainer()
+    commentstyle=\color{swiftComment}\itshape,      % Comments in italics
+    stringstyle=\color{swiftString},                % Strings in orange
+    backgroundcolor=\color{ListingsBackgroundColor}
 }
 
 \lstnewenvironment{SwiftCode}[1][]
 {\lstset{%
-	language=Swift,
-	escapeinside={/+}{+/}, % makes "/+" and "+/" available for Latex escapes (labels etc.)
-	#1}}%
+    language=Swift,
+    escapeinside={/+}{+/}, % Allows LaTeX inside Swift code
+    #1}}%
 {}
-
 
 % Code Environment for XML
 \lstnewenvironment{XmlCode}[1][]
