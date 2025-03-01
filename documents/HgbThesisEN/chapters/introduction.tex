@@ -2,19 +2,44 @@
 \label{cha:Introduction}
 
 \section{Motivation}
-In today's world, climate change has emerged as a critical global issue, prompting widespread efforts to reduce carbon footprints. One effective strategy to mitigate environmental impacts is the increased use of public transportation over private vehicles. Despite the clear environmental advantages, such as reduced fuel consumption and lower emissions, many commuters still favor the convenience and flexibility of private cars. This preference persists even though mass transit can significantly alleviate urban traffic congestion and improve air quality. As Minelgait\.{e}, Dagiliut\.{e} et al. \cite{minelgaitė2020sustainability} highlight, expanding the adoption of public transport is essential for minimizing environmental damage. Specifically, the United Nations \cite{un2023} reports that individuals could reduce their carbon footprint by up to 2.2 tons annually by switching from personal vehicles to shared transportation systems. However, as Zheng and Krol \cite{mit2023} note, widespread adoption will only occur when public transport becomes the “most convenient option for getting around.” Currently, challenges such as limited service coverage, infrequent schedules, and perceptions of unreliability deter potential users. Thus, making public transit more accessible and user-friendly is crucial for encouraging environmentally responsible travel behavior. This thesis aims to explore how technological innovations can enhance the appeal and functionality of public transportation, ultimately increasing rates of usage.
+In today's world, climate change is a pressing global issue, driving efforts to reduce carbon footprints.
+One effective strategy to mitigate environmental impacts is increasing public transportation use over private vehicles.
+Despite the clear environmental advantages, such as reduced fuel consumption and lower emissions, many commuters still favor private cars due to their convenience and flexibility.
+According to the United Nations \cite{un2023}, switching to public transport could reduce an individual's carbon footprint by up to 2.2 tons annually.
+
+However, as Zheng and Krol \cite{mit2023} note, widespread adoption will only happen if public transit becomes the “most convenient option for getting around.”
+While service coverage and infrequent schedules are well-known barriers, another common issue is that passengers often miss their stop due to distractions.
+Whether listening to music, reading or using their smartphones, commuters can easily lose track of their location.
+To address this issue, this thesis explores the development of a location-based alert system that notifies users as they approach their destination.
+By helping passengers stay aware of their stop, such a system could make public transportation more accessible and user-friendly, ultimately increasing rates of usage.
 
 \section{Challenges}
-One significant obstacle to this goal is the strong competition from private vehicles, particularly in suburban and rural regions, where car ownership is widespread, and public transport often struggles to provide a viable alternative. While urban areas often benefit from more comprehensive public transport networks, less populated regions face specific difficulties with limited routes, infrequent schedules, and longer distances between stops. In these areas, missing a stop can result in substantial delays or even stranding passengers. These discrepancies highlight the need for tailored technological solutions that address the distinct requirements of passengers in both urban and rural settings. Additionally, issues such as comfort, reliability, and safety significantly deter public transport use. A study by Friman and Fellesson \cite{friman2009satisfaction} on passenger satisfaction and stress reduction states that passengers frequently express dissatisfaction with these factors, which affects their overall experience. The added anxiety of potentially missing a stop only exacerbates the situation, creating further reluctance to use public transportation according to Minelgait\.{e}, Dagiliut\.{e} et al. \cite{minelgaitė2020sustainability}. Addressing these concerns through innovative systems that are providing tailored alerts for commuters is essential to overcoming the reluctance many people feel toward public transport.
+One significant challenge to this goal is the strong competition from private vehicles, particularly in suburban and rural regions, where car ownership is widespread, and public transport struggles to provide a viable alternative. 
+While urban areas often benefit from more comprehensive public transport networks, less populated regions face specific difficulties with limited routes, infrequent schedules and longer distances between stops.
+In these areas, missing a stop can lead to long waits for the next transport or even stranding passengers.
 
-In addition to the challenges related to public transport, several technological challenges must be addressed when developing an effective alert system. Managing reminders is one issue, especially within the constraints of app development guidelines, such as those set by Apple, which restrict background activity and control over alerts. Geofencing also requires constant location tracking, which not only drains the battery but also might raise privacy concerns, as highlighted by Shevchenko and Reips \cite{shevchenko2024geofencing}. They also point out the issue of choosing an inappropriate radius size for geofencing, which can lead to inaccuracy or latency. Additionally, some devices may lack real-time location capabilities, meaning geofencing might not work reliably or at all for those users.
+Beyond challenges related to public transport, several technological challenges arise in developing an effective alert system. 
+Apple's app development guidelines impose strict restrictions on background activity, limiting how and when alerts can be triggered. 
+Geofencing requires continuous location tracking, which impacts battery life and may raise privacy concerns, as noted by Shevchenko and Reips \cite{shevchenko2023geofencing}.
+Additionally, defining an appropriate geofence radius is important, as a poorly chosen size can cause inaccuracy or latency.
+Some devices may lack real-time location capabilities, meaning geofencing might not work reliably or at all for those users.
 
-\section{Goals} 
-This thesis aimes to analyze and introduce a user-focused app-based alert system that integrates schedule data and geofencing. Passengers are provided with a public transport app that reduces stress and increases accessibility. This approach, particularly valuable in rural areas, ensures that regular commuters as well as tourists, children, and the elderly can navigate public transportation networks with ease, ultimately encouraging greater adoption of public transport.
+\section{Goals}
+This thesis aimes to develop a user-focused app-based alert system in iOS that integrates schedule data and geofencing. 
+Passengers are provided with a public transport app that will notify them along their journey when their destination approaches.
+This approach, particularly valuable in rural areas, ensures that regular commuters as well as tourists, children, and the elderly can navigate public transportation networks with ease.
 
-The app offers users the flexibility to choose from three distinct alert modes based on their preferences. The first mode sends alerts according to the scheduled arrival times of transports. The second uses three geofences along the route to progressively notify passengers as they near their desired stop. The third relies on nested geofences around the final destination to trigger alerts. In addition to the modes, the user will be alerted with three escalating levels of urgency, ensuring passengers are notified in an effective manner. By exploring these three modes, this thesis will try to evaluate their respective advantages and disadvantages, and demonstrate their implementation within iOS. 
+The app offers users the flexibility to choose from three distinct alert modes based on their preferences. 
+The first mode sends alerts according to the scheduled arrival times of transports. 
+The second uses three geofences along the route to progressively notify passengers as they near their desired stop. 
+The third relies on nested geofences around the final destination to trigger alerts. 
+Additionally, the user will be alerted with three escalating levels of urgency, ensuring passengers are notified effectively.
+Furthermore, the app aims develop a test feature for wizard-based design that uses voice control for setting up reminders.
 
-However, Apple's app development guidelines present certain challenges, and this thesis will examine strategies to bypass these constraints. To test the system's functionality, a simulator mode will be developed using a GPX file, allowing the system to simulate journeys along desired routes without requiring on-site testing. Additionally, the app will incorporate voice control for setting up reminders.
-
-\section{Structure} %MUST CHANGE THIS!!!
-Before diving into how the implementation of location-based alerts works, Chapter 2 introduces the core technologies used in this project, with a focus on positioning methods such as cellular network positioning, \ac{GNSS} and geofencing. The chapter also discusses alert systems on smartphones and their restrictions as well as \ac{STT} transcription. Furthermore, the challenges specific to public transportation are highlighted. Chapter 3 outlines the app concept, providing an overview of the different alert modes and explaining their functionality. Chapter 4 details the technical implementation, discussing system architecture, geofence management, notification handling, voice-controlled alert setup, and route simulation. This thesis closes with Chapter 5, which describes what has been achieved and outlines potential next steps.
+\section{Structure}
+Before diving into the implementation, Chapter 2 introduces the core technologies relevant to this project, focusing on positioning methods and the systems that implement them. 
+The chapter also discusses alerts on smartphones and their restrictions within iOS. 
+Chapter 3 analyzes existing public transportation apps and how they inform users of approaching destinations.
+Chapter 4 presents the app concept, detailing the prototype design, proposed reminder behavior and data persistence strategy.
+Chapter 4 discusses the implementation in iOS, covering system architecture, geofence management, reminder triggering and voice-controlled alert setup. 
+This thesis closes with Chapter 5, which describes what has been achieved and outlines potential next steps.

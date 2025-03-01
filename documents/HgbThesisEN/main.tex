@@ -19,11 +19,22 @@
 %%%-----------------------------------------------------------------------------
 
 \usepackage[printonlyused]{acronym}
+\usepackage{listings}
 \usepackage{hyperref}
 \usepackage{subfig}
 \usepackage{booktabs}
 \usepackage{rotating}
 \usepackage{array}
+\usepackage{textcomp}
+\usepackage{tikz}
+\usepackage{float}
+
+% Define a command for a properly fitting circled number
+\newcommand{\circnum}[1]{%
+    \tikz[baseline=(char.base)]{
+        \node[shape=circle, draw, inner sep=0.5pt] (char) {#1};
+    }\hspace{-0.35em}
+}
 
 \graphicspath{{images/}}  % Location of images and graphics
 \logofile{logo}           % Logo file: images/logo.pdf (no logo: \logofile{})

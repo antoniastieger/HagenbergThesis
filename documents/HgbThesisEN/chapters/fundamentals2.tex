@@ -1,7 +1,10 @@
 \chapter{Fundamentals}
 \label{cha:Fundamentals}
 
-This chapter provides an overview of the core concepts relevant to the thesis. It begins by reviewing various positioning methods as well as systems for indoor and outdoor settings, followed by an examination of how smartphones handle alerts, including different types and influencing factors in iOS. Geofencing technologies are analyzed for their functionality, use cases and limitations. Finally, advancements in technologies such as speech-to-text and large language models are discussed in the context of voice-controlled reminder systems.
+This chapter provides an overview of the core concepts relevant to the thesis. 
+It begins with a review of various positioning methods and systems for both indoor and outdoor environments. 
+Next, it examines geofencing technology, exploring its use cases and limitations. 
+Finally, the chapter discusses how smartphones handle alerts, focusing on different types of notifications and the factors influencing them in iOS.
 
 \section{Positioning Methods}
 \label{sec:methods}
@@ -204,16 +207,7 @@ Terminals can range from mobile phones and laptops to vehicles and \ac{RFID} tag
 
 In most cases, base stations either assist terminals in performing measurements or perform the measurements themselves. 
 Additional components, such as databases and control units, may also be required for managing, processing and distributing positioning data. 
-This section provides an overview of positioning systems, including \ac{CPS}, \acs{GNSS}, \acs{Wi-Fi} and Bluetooth positioning systems, as well as \acs{INS}, all of which rely on the positioning methods described in Subsection~\ref{sec:methods}.
-
-% kolodziej2017local p. 106-107, 109-110
-% werner2014indoor p. 88-98
-% kupper2005location p. 91, 126-130, 155 (Satellite), 185 (Cellular), 233 (WLAN)
-
-% APPLE USES all available components on the device, including the Wi-Fi, GPS, Bluetooth, magnetometer, barometer, and cellular hardware 
-%https://developer.apple.com/documentation/corelocation
-%iOS and iPadOS devices might use Wi-Fi and Bluetooth to determine your location. GPS and cellular location are available on iPhone and iPad (Wi-Fi + Cellular) models.
-%https://support.apple.com/en-us/102647#:~:text=iOS%20and%20iPadOS%20devices%20might,%2DFi%20%2B%20Cellular)%20models.
+This section provides an overview of positioning systems, including \ac{CPS}, \ac{GNSS}, \acs{Wi-Fi} and Bluetooth positioning systems, as well as \acs{INS}, all of which rely on the positioning methods described in Subsection~\ref{sec:methods}.
 
 \subsection{Cellular Positioning Systems (CPS)}
 A \acs{CPS} uses the existing infrastructure of cellular mobile phone networks to estimate the location of a device by analyzing signals exchanged between terminals and base stations.
@@ -303,7 +297,7 @@ To mitigate this, inertial navigation is often only applied in short-term uses, 
 By combining the last known location obtained via \acs{GNSS} with measurements captured by an \acs{IMU} chip, a vehicle's movement can still be tracked during GNSS outages, e.g. driving through a tunnel. 
 
 \section{Geofencing}
-Shevchenko and Reips \cite{shevchenko2024geofencing} define geofencing as the automated triggering of actions when "virtual boundaries around specific locations" are crossed. 
+Shevchenko and Reips \cite{shevchenko2023geofencing} define geofencing as the automated triggering of actions when "virtual boundaries around specific locations" are crossed. 
 It works by defining a point on a map with latitude, longitude and a radius to form a circular boundary. 
 When this boundary is entered or exited, an event can be triggered.  
 iOS provides this feature through the Core Location framework, as stated on the Apple Developer Pages \cite{apple_geofencing}. 
@@ -337,11 +331,11 @@ Notifications are one of the most common types of alerts and can be split into l
 According to Apple's documentation \cite{apple_local_notifications}\cite{apple_push_notifications}, local notifications are created by the app itself to inform users of events, even when the app runs in the background. 
 Push notifications are sent from a server and are often used for messages or reminders and updates.
 Another type of alert is haptic feedback, which uses vibrations to notify users physically. 
-In iOS, tools like the UIImpactFeedbackGenerator provide vibrations for various levels of physical impact such as light, medium or heavy taps.
-The UISelectionFeedbackGenerator signals changes in selection, like scrolling through a picker, while the UINotificationFeedbackGenerator conveys success, warning or error notifications to clarify important feedback, as noted by the Apple Dev-Pages \cite{apple_haptics}.
+In iOS, tools like the \lstinline{UIImpactFeedbackGenerator} provide vibrations for various levels of physical impact such as light, medium or heavy taps.
+The \lstinline{UISelectionFeedbackGenerator} signals changes in selection, like scrolling through a picker, while the UINotificationFeedbackGenerator conveys success, warning or error notifications to clarify important feedback, as noted by the Apple Dev-Pages \cite{apple_haptics}.
 Sound feedback is also available and is more noticeable, making it effective for capturing users' attention.
 According to Apple's guidelines \cite{apple_sound_guidelines}, iOS sounds are divided into system sounds, used for standard actions like errors or confirmations and custom sounds, often used in games or specific app events to create unique auditory experiences.
-For visual feedback, Apple's UIAlertController \cite{apple_alerts} provides pop-up alerts with titles, messages and action buttons, often used for critical alerts or confirmations to ensure user attention. 
+For visual feedback, Apple's \lstinline{UIAlertController} \cite{apple_alerts} provides pop-up alerts with titles, messages and action buttons, often used for critical alerts or confirmations to ensure user attention. 
 Toasts, which are brief messages that appear and disappear without user interaction, are another form of visual feedback. 
 While not native to iOS, third-party frameworks can enable toasts, offering a less intrusive way to share short information. 
 Subtler visual cues, like progress indicators and badges, are also effective for showing ongoing tasks or highlighting unread notifications within app sections.
@@ -351,17 +345,17 @@ This feature keeps users informed about ongoing events, such as tracking a food 
 \subsection{Triggers}
 In iOS, alerts are not limited to user input, they can also be triggered by automated or event-based conditions. 
 Apps, for example, can use scheduled timers to generate alerts or notifications at specific times for reminders, countdowns or periodic updates. 
-This is often implemented using Swift's Timer class \cite{apple_timer}.
+This is often implemented using Swift's \lstinline{Timer} class \cite{apple_timer}.
 Alerts can also respond to app state changes, such as when an app transitions to the background, returns to the foreground or closes. 
 For instance, an app may display a confirmation alert if the user attempts to leave a page with unsaved data or notify them of an important update.
 Device sensors like accelerometers and gyroscopes detect motion or orientation changes, which can also trigger alerts.
 Location-based triggers, which are central to this thesis, use geographical boundaries to deliver alerts when a user moves into or out of a specified region.
-According to Apple's Developer Pages \cite{apple_corelocation, apple_coremotion}, the CoreLocation framework provides tools like CLLocationManager for managing these triggers, while CoreMotion supports motion event detection. 
+According to Apple's Developer Pages \cite{apple_corelocation, apple_coremotion}, the CoreLocation framework provides tools like \lstinline{CLLocationManager} for managing these triggers, while \lstinline{CoreMotion} supports motion event detection. 
 Similarly, HealthKit \cite{apple_healthkit} enables alerts based on health metrics, such as notifying users if their heart rate exceeds a specified threshold.
-To manage in-app notifications, Apple's NotificationCenter \cite{apple_notificationcenter} is frequently used to broadcast data changes, enabling observers to update alerts or badges in real time. 
+To manage in-app notifications, Apple's \lstinline{NotificationCenter} \cite{apple_notificationcenter} class is frequently used to broadcast data changes, enabling observers to update alerts or badges in real time. 
 For notifications, iOS provides three main trigger types. 
-UNTimeIntervalNotificationTrigger \cite{apple_time_trigger} schedules alerts after a specified time interval. 
-UNCalendarNotificationTrigger \cite{apple_calender_trigger} triggers notifications at specific dates or times, with options for recurring alerts and UNLocationNotificationTrigger \cite{apple_location_trigger} sends alerts when a user enters or leaves predefined geographical areas.
+\lstinline{UNTimeIntervalNotificationTrigger} \cite{apple_time_trigger} schedules alerts after a specified time interval. 
+\lstinline{UNCalendarNotificationTrigger} \cite{apple_calender_trigger} triggers notifications at specific dates or times, with options for recurring alerts and \lstinline{UNLocationNotificationTrigger} \cite{apple_location_trigger} sends alerts when a user enters or leaves predefined geographical areas.
 
 \subsection{Restrictions in iOS}
 When it comes to responsible app development, Apple has many guidelines to maintain user control and prevent disruptive app behavior. 
@@ -376,57 +370,18 @@ Custom sounds for local notifications are limited to 30 seconds, if a sound exce
 Local notifications also respect Silent Mode and Do Not Disturb settings, meaning sounds will not play if these modes are active. 
 According to Apple's documentation \cite{apple_critical_alerts}, critical alerts are allowed to bypass these settings, but this permission is reserved for essential use cases, such as health monitoring or emergency alerts, not for general alarms or reminders. 
 Location-based triggers, such as geofencing, also require explicit user permission. 
-IOS \cite{apple_geofencing_limits} limits the frequency of location-based notifications and may throttle frequent triggers. 
+iOS \cite{apple_geofencing_limits} limits the frequency of location-based notifications and may throttle frequent triggers. 
 Excessive location tracking can lead to App Store rejection unless it is essential to the app's functionality. 
 Additionally, Apple states on its Dev Pages \cite{apple_geofencing} that the use of geofencing is limited to a maximum of 20 active geofences per app to allow all apps to access condition monitoring and prevent excessive battery drain or performance issues, as these features rely on shared hardware resources.
 
-% \section{Speech-to-Text}
-% \acs{STT} is a technology that turns spoken words into written text. 
-% It works by listening to audio and using voice recognition to understand and transcribe the words. 
-% The result is a text document that captures what was said. 
-% While speaking is the most natural and efficient way to communicate, audio recordings alone can be difficult to review or reuse quickly. 
-% This makes \acs{STT} an important tool across many fields. 
-% For instance, it enables record-keeping of patient notes in healthcare or court proceedings in legal services and supports transcription of lectures in education. 
-% Furthermore, it is widely used in virtual assistants to process voice commands, in closed captioning to make videos accessible to broader audiences or in creating accessibility tools for individuals with hearing impairments.
-
-% Rabiner and Juang \cite{rabiner1993speechrecognition} explain that speech can be understood as an audio signal characterized by its frequency, amplitude and temporal patterns, which define the unique qualities of spoken language. 
-% They further emphasize that speech is made up of different components that work together to create meaning and structure. 
-% One of the most basic elements is phonemes, which are the smallest units of sound in a language like the "b" in "bat". 
-% These phonemes combine to form syllables, which are the building blocks of words, such as "bat" having one syllable and "better" having two. 
-% Beyond these, intonation patterns refer to the rise and fall of pitch in speech, which help convey emotions, emphasis or the difference between a question and a statement. 
-% According to Reetz \cite{reetz2020phonetics}, the process of turning speech into text depends on acoustic properties and linguistic understanding. 
-% Acoustic models focus on the sound itself, breaking down the audio into patterns like pitch, tone and duration to identify specific sounds or words. 
-% Meanwhile, language models go a step further by applying rules of grammar, vocabulary and sentence structure to make sense of those sounds in context. 
-% Together, these models ensure that the transcription is not only accurate in identifying the sounds but also meaningful and grammatically correct in written form.
-
-% However, \acs{STT} faces several challenges that can impact its accuracy. 
-% Background noise, such as conversations, traffic or music can interfere with speech clarity and make transcription difficult. 
-% Regional accents and dialects add variability in pronunciation, which can lead to misinterpretations. 
-% Additionally, Zechner and Waibel \cite{zechner20000spontaeousspeech} highlight that conversations with multiple speakers, especially when voices overlap, present difficulties in separating speech accurately. 
-% Lastly, spontaneous speech with its non-standard grammar, fillers like "um" or "uh" and frequent self-corrections further complicates transcription, as stated by Furiu et al. \cite{furiu2004spontaneousspeech}. 
-
 \section{Conclusion}
-% WRITE HOW STT IS USED IN THE APP; SET UP REMINDERS WITH VOICE-CONTROL
-% !!!! The configuration of your CLLocationManager object affects which radios the system uses and your app's power consumption.
-% https://medium.com/@matheusqcardoso98/ios-retrieving-the-users-location-and-keeping-it-optimal-ee1d59c7fe19
-% CoreLocation: iOS' location-related utilities can be accessed through the CLLocationManager class
-%https://developer.apple.com/documentation/corelocation/monitoring-the-user-s-proximity-to-geographic-regions
-% Condition monitoring (also known as geofencing) is a way for your app to be alerted when the user enters or exits a geographical region. You might use region monitoring to perform location-related tasks. For example, the Reminders app uses them to trigger reminders when the user arrives at or leaves a specified location, as shown in Figure 1.
-% Define a circular area centered on a geographic coordinate using a CLCircularGeographicCondition. The radius of the condition defines its boundary. You define the conditions you want to monitor and register them with the system by calling the startMonitoring(for:) method of your CLLocationManager object. The system monitors your conditions until you explicitly ask it to stop or until the device reboots.
-%https://developer.apple.com/documentation/corelocation/cllocationcoordinate2d
-% The latitude and longitude associated with a location, specified using the WGS 84 reference frame.
-% Creates a location coordination object with the specified latitude and longitude values.
-%https://developer.apple.com/documentation/corelocation/getting-the-current-location-of-a-device#
-% Core Location can determine the current location using many different types of hardware, including Wi-Fi, cellular, and GPS radios. Core Location doesn’t need every one of these radios to determine the location. Instead, it selectively enables radios to get the required location data in the most power-efficient way possible. The configuration of your CLLocationManager object affects which radios the system uses and your app’s power consumption.
-% Core Location optimizes power usage as much as possible, but you can still help. The best optimization is to turn off location services when your app doesn’t need new location data. Other optimizations require you to adjust the configuration of your location manager object:
-% The Standard location service provides the most precise and regular location data, but uses more power than the other services. Use it primarily if your app provides turn-by-turn navigation or needs a greater precision or frequency of events. This location service is the only one available to apps running in visionOS. Call startUpdatingLocation() to start the service, or call requestLocation() to get a single location event.
-% Configure the activityType property to an appropriate value, and set the pausesLocationUpdatesAutomatically property to true. Core Location uses your activity type to turn off hardware automatically when conditions allow it. For example, if the activity type is CLActivityType.automotiveNavigation and someone’s location isn’t changing, the system might turn off radio hardware until it detects new movement.
-% Another way to improve power usage is to add the NSLocationDefaultAccuracyReduced key with the value true to your app’s Info.plist file. Include this key if lower-accuracy location data is sufficient for your needs. For example, an app that returns a list of restaurants within driving distance doesn’t need someone’s precise location. As needed, you can always use your location manager to request more accurate data later. However, the system displays a prompt to the device owner to grant each request you make.
-%https://developer.apple.com/documentation/corelocation/cllocationmanager
-% var accuracyAuthorization: CLAccuracyAuthorization A value that indicates the level of location accuracy the app has permission to use. or The accuracy of a geographical coordinate. typealias of desiredAccuracy
-% class func isMonitoringAvailable(for: AnyClass) -> Bool Returns a Boolean value indicating whether the device supports region monitoring using the specified class.
-% var distanceFilter: CLLocationDistance The minimum distance in meters the device must move horizontally before an update event is generated. Set the distanceFilter property to the largest possible value that gives you the information you need. Higher values let the system turn off radio hardware more frequently.
-% let CLLocationDistanceMax: CLLocationDistance A constant indicating the maximum distance.
-% let kCLDistanceFilterNone: CLLocationDistance A constant indicating that all movement should be reported.
-% var desiredAccuracy: CLLocationAccuracy The accuracy of the location data that your app wants to receive. Set the desiredAccuracy property to the lowest possible value that gives you the information you need. Lower accuracy values let the system use more power-efficient hardware. Lower values also let the system turn off hardware sooner.
-% var monitoredRegions: Set<CLRegion> The set of shared regions monitored by all location-manager objects.
+This chapter covered the fundamental concepts necessary for developing a location-based reminder system. 
+Since the system relies on iOS's Core Location framework, understanding how positioning works is important. 
+However, Apple does not disclose the exact mechanisms behind how location data is determined, only stating on the Developer Website \cite{apple_corelocation} that a combination of GPS, Wi-Fi, Bluetooth, inertial sensors and cellular data is used. 
+For this reason, this chapter examined the basic positioning methods, along with the positioning systems that implement them.
+
+Geofencing was explored as the primary method for triggering location-based reminders, highlighting both its functionality and limitations such as iOS's restriction of 20 simultaneously monitored geofences per app. 
+This constraint directly impacts how many reminders can be actively tracked at a time.
+While this app also includes a time-based reminder mode, this approach is fundamentally different from geofencing. 
+Unlike location-based triggers, time-based reminders are straightforward to implement, whereas geofencing requires deeper background knowledge due to its reliance on continuous location monitoring.
+Additionally, an overview of smartphone alerts was provided to establish how reminders are delivered to users and the restrictions imposed by iOS.

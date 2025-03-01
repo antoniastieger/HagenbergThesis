@@ -41,16 +41,17 @@ The sketched prototype in Figure \ref{fig:prototype} provides a visual represent
 
 \section{Reminder Behaviour}
 \label{sec:behaviour}
-Once a user has selected a public transport connection, the app should provide a reminder mechanism of some sort.
-The proposed concept aims to give users full control over how and when these reminders are triggered, ensuring they are noticeable even if the user is asleep or distracted.
-The approach to reminder behavior can be divided into two key aspects: escalation and triggers. 
-Escalation refers to how the intensity of feedback increases as the journey progresses, ensuring that users become more aware of their approaching stop. 
-This could involve a gradual shift from subtle visual cues to more intrusive haptic or acoustic signals. 
-Triggers, on the other hand, determine when these reminders are activated. 
-Different approaches can be considered, relying either on arrival times or on the user's location and proximity to their destination. 
-The following subsections explore these aspects in more detail.
+Once a user selects a public transport connection, the app should provide a reminder mechanism of some sort.
+The proposed concept aims to prioritize user control over how and when reminders are triggered, ensuring they are noticed even if the user is asleep or distracted.
+The reminder behavior can be divided into escalation and triggers. 
 
-\subsection{Escalations}
+Escalation refers to how reminder intensity increases as the journey progresses. 
+This could involve a gradual shift from subtle visual cues to more intrusive haptic or acoustic signals. 
+Triggers determine when these reminders activate. 
+Different approaches can be considered, relying either on arrival times or the user's proximity to their destination. 
+The following subsections explore these aspects in detail.
+
+\subsection{Escalation}
 \label{sec:escalations}
 Unlike conventional transit apps discussed in Chapter \ref{cha:RelatedWork}, which primarily provide route and schedule information and, at best, basic notifications or live activity updates, this approach emphasizes ensuring that users receive reminders in a way that effectively captures their attention. 
 To make sure that alerts are reliably noticed, different types of feedback mechanisms can be considered, including visual, haptic and acoustic signals. 
@@ -59,19 +60,19 @@ An acoustic signal could take the form of a loud and disruptive alarm, serving a
 These feedback methods may be used individually or in combination depending on the user's preference.
 
 The way reminders escalate can follow different design approaches. 
-One possibility is a concentric structure, where layers of increasing urgency build up as the user approaches their stop. 
-In this case, the triggering would be based on proximity to the destination, requiring a system capable of estimating the user's position along the route. 
-Another approach is a sequential design, where reminders are activated at multiple predefined points throughout the journey. 
+Is a sequential model, reminders activate at multiple predefined points throughout the journey. 
 This could involve placing triggers at specific stops before the destination or by progressively increasing alert intensity as the user nears arrival based off of fixed arrival times.
-These two approaches are illustrated in Figure \ref{fig:reminderescalations} where (a) represents the sequential model and (b) the concentric model.
+Alternatively, a concentric structure can be used, where nested zones trigger increasingly urgent alerts as the user nears their stop.
+In this case, the triggering would be based on proximity to the destination, requiring a system capable of estimating the user's position along the route. 
+These two approaches are illustrated in Figure \ref{fig:reminderescalation} where (a) represents the sequential model and (b) the concentric model.
 
-\begin{figure}[htbp]%
+\begin{figure}[H]%
     \centering
     \subfloat[\centering]{{\includegraphics[width=14cm]{Perlenkette.pdf}}}%
     \qquad
     \subfloat[\centering]{{\includegraphics[width=12cm]{Zwiebel.pdf}}}%
     \caption{Escalation of reminders following a sequential model (a) and a concentric model (b)}%
-    \label{fig:reminderescalations}%
+    \label{fig:reminderescalation}%
 \end{figure}
 
 \subsection{Triggers}
@@ -88,42 +89,27 @@ Alternatively, a concentric approach could be considered, where reminders are tr
 In this context, it could be considered whether geofencing might be used to allow the system to detect when the user crosses predefined distance markers.
 
 \section{Data Persistence}
-It is being considered that the app will require some form of data persistence to store user preferences and reminders beyond the app's runtime. 
-This would help ensure a seamless user experience across sessions.
-
-As outlined in the previous sections, the concept envisions that users will be able to search for public transport connections from A to B. 
-Once a user selects a favorite route, the app could prompt them to define how reminders should behave according to their preferences. 
-These preferences might then serve as the basis for scheduling escalating reminders.
-To ensure flexibility, it is also being considered that users will have the option to cancel scheduled reminders if they decide not to take the journey after all, preventing unnecessary alerts.
-In terms of technical implementation, reminders could be structured as objects within a class. 
-These objects would need to be displayed in an overview within the app and made editable. 
-To maintain data consistency across sessions, storing relevant information in a database is being explored.
-However, it is not only the reminder objects themselves that might need to be saved. 
+It is being considered that the app will require some form of data persistence to store user data beyond the app's runtime. 
+The system envisions two main types of persistent data: user preferences and reminder objects. 
+User preferences define how reminders behave, whereas reminder objects should store trip-related details.
 While the concept foresees that users can configure preferences for each reminder individually, there is also the idea that frequently used settings could be saved and easily reapplied.
-
-Thus, the approach to data persistence could be divided into two components: user preferences and reminders.
-The following subsections will explore potential data structures in more detail.
+The following subsections outline these data structures in more detail.
 
 \subsection{User Preferences}
 For user preferences, it is being considered that the reminder behavior, whether time-based or location-based, could be represented through a mode variable that is then stored in a database.
-AAdditionally, an interval setting could define when the user receives reminders, depending on the selected mode. 
+Additionally, an interval setting could define when the user receives reminders, depending on the selected mode. 
 For example, if reminders are scheduled in a time-based manner, one possible approach could be to define the interval in minutes before arrival at the destination, such as triggering a reminder five minutes before.
 In the case of a location-based mode, the interval could instead be expressed in proximity, for instance 500 meters before reaching the destination.
 Furthermore, in alignment with the escalating reminder behavior, reminders could appear in different forms. 
 These could be visual, haptic, acoustic, or a combination of them. 
 However, if a user prefers only a non-intrusive visual cue such as a notification, the app would need to account for this preference to avoid unwanted alerts.
-All of these user preference settings would need to be stored to remain consistent across app sessions.
+All of these user preference settings would need to be stored to remain consistent beyond the app's runtime.
 
 \subsection{Reminders}
 When it comes to the reminder object itself, several parameters would need to be considered.
-Depending on how the user prefers to be reminded, whether time-based or location-based, the reminder object would require different types of information.
+The required information depends on whether the user prefers time-based or location-based reminders.
 For a time-based reminder, storing a specific time and date would be essential.
-For a location-based reminder, storing the latitude and longitude of the destination and the starting point would be necessary so that when the system determines the user's position, it would need to compare the tracked location against the desired destination to trigger the reminder at the appropriate moment.
-How the exact parameterization of the reminder object under consideration of the different reminder modes is further discussed in Chapter \ref{cha:Implementation}.
-
-% \begin{figure}[htbp]
-%     \centering
-%     \includegraphics[width=0.5\textwidth]{Reminder.pdf}
-%     \caption{Proposed data model for Reminder objects}
-%     \label{fig:reminder}
-% \end{figure}
+For a location-based reminder, the system would need to store the latitude and longitude of the destination.
+This should allow the user's current position to be compared against the target location, ensuring the reminder is triggered at the right moment.
+Additionally, the names of the starting and destination stations should be stored for display in an overview of active reminders.
+The approach also aims to allow unscheduling of reminders, requiring each reminder object to have a unique identifier to locate the correct object and modify it.

@@ -416,18 +416,19 @@ keepspaces=true,%
 \definecolor{swiftAttribute}{rgb}{0.45,0.55,0.85} % Softer blue for @State, @Binding, etc.
 \definecolor{swiftError}{rgb}{0.95,0.30,0.60}     % Pink for catch, throws, try
 \definecolor{swiftProperty}{rgb}{0.90,0.30,0.55}  % Muted pink for var, let, and body
-\definecolor{swiftInstance}{rgb}{0.50,0.75,0.75}  % Soft cyan for shared, self
+\definecolor{swiftInstance}{rgb}{0.0, 0.2, 0.6}	  % Soft cyan for shared, self
 \definecolor{swiftFunction}{rgb}{0.35,0.75,0.55}  % Muted green for environment(), modelContainer()
 
 \lstdefinelanguage{Swift}
 {
-    morekeywords=[1]{if,else,for,in,while,where,do,catch,try,case,break,import,return,switch,guard,defer,insert,delete,init,fatalError,didSet},
-    morekeywords=[2]{class,struct,enum,protocol,extension,override,super,static,final,associatedtype,subscript,mutating,nonmutating},
+    morekeywords=[1]{if,else,for,from,in,_,while,where,do,catch,try,default,case,break,import,return,switch,guard,defer,init,fatalError,didSet},
+    morekeywords=[2]{class,enum,protocol,extension,override,super,static,final,associatedtype,subscript,mutating,nonmutating},
     morekeywords=[3]{@State,@Binding,@Environment,@ObservedObject,@Published,@MainActor,@ViewBuilder,@available,@discardableResult,@Query,@Attribute,@AppStorage,@Observable},
-    morekeywords=[5]{String,Int,Double,Float,Character,Bool,Array,Dictionary,Set,Optional,Void,Any,AnyObject,Protocol,Self,AppStorageValues,LocalStorage,ReminderMode,Reminder,DistanceInterval,TimeInterval,StationInterval},
-    morekeywords=[6]{var,let,private,self,some},
-    morekeywords=[7]{WindowGroup,MainTabbedView,ModelContainer,DistanceReminder,TimeReminder,StationReminder,LocationManager,Scene},
-    sensitive=true,
+    morekeywords=[5]{String,Int,Double,Float,Character,Bool,Array,Dictionary,CLLocationCoordinate2D,Set,Optional,CLCircularRegion,Void,Any,AnyObject,Protocol,Self,AppStorageValues,LocalStorage,ReminderMode,Reminder,DistanceInterval,TimeInterval,StationInterval},
+    morekeywords=[6]{var,let,private,self,some,struct,@main,true,false,func,@objc},
+    morekeywords=[7]{WindowGroup,MainTabbedView,ModelContainer,UNUserNotificationCenter,RunLoop,UNCalendarNotificationTrigger,Timer,Bundle,UNMutableNotificationContent,UNNotificationSound,UNTimeIntervalNotificationTrigger,UNNotificationRequest,AVAudioPlayer,CLRegion,CLLocationManager,DistanceReminder,TimeReminder,StationReminder,LocationManager,Scene,App,GeofenceManager},
+    morekeywords=[8]{scheduleNotification,vibrate,playAlarm,add,play,print,extractEventType,extractIdInfoForNotification,didEnterRegion,stopMonitoring,stopMonitorRegionAtLocation,startMonitoring,startMonitorRegionAtLocation,isMonitoringAvailable,requestWhenInUseAuthorization,requestAlwaysAuthorization,current,handleNotificationPermission,delete,insert},
+	sensitive=true,
     morecomment=[l]{//},          % Line comments
     morecomment=[s]{/*}{*/},      % Block comments
     morestring=[b]",              % Double-quoted strings
